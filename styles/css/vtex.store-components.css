@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.infoCardContainer {
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  border-bottom: 0;
+}
+
+.searchBarContainer {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.suffixWrapper--busqueda {
+  display: flex;
+}
+
+.searchBarIcon--busqueda {
+  color: #ff511d;
+}
+
+.searchBarContainer {
+  align-items: center;
+  display: flex;
+}
+
+.imageElement--lanzamiento1,
+.imageElement--lanzamiento2 {
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Header */
+.imageElementLink--imagen-milk-izq,
+.imageElementLink--imagen-milk-der {
+  align-items: center;
+  display: flex;
+}
+
+.imageElementLink--imagen-milk-izq {
+  margin-left: 7px;
+}
+
+.imageElementLink--imagen-milk-der {
+  margin-right: 7px;
+}
+
+.logoLink--logo-mobile {
+  margin-right: 55px;
+}
+
+.imageElement--imagen-combos-menu {
+  margin-right: 70px;
+}
+
+.imageElement--imagen-row {
+  display: flex;
+  margin: auto;
+}
+
+/* Nosotros */
+.imageElement--imagen-nosotros-mobile {
+  width: 90%;
+  margin: 20px 20px 0 18px;
+}
+
+.imageElement--imagen-nosotros {
+  margin-left: 25px;
+  padding-top: 30px;
+}
+
+.imageElement--imagen-nosotros-colesterol-mobile,
+.imageElement--imagen-nosotros-huevos-mobile,
+.imageElement--imagen-nosotros-transgenicos-mobile,
+.imageElement--imagen-nosotros-lactosa-mobile,
+.imageElement--imagen-nosotros-gluten-mobile {
+  margin: auto;
+}
+
+/* Vitrina */
+.sellingPrice {
+  font-weight: bold;
+}
+.discountInsideContainer {
+  background: #ff511d;
+}
+
+/* Producto */
+
+.price_listPrice--product-price
+  :global(.vtex-store-components-3-x-currencyContainer--product-price) {
+  font-family: "Gotham Regular";
+  text-transform: uppercase;
+  color: #6f6f6f;
+  padding-left: 4px;
+  font-size: 1rem;
+}
+
+.sellingPriceContainer
+  :global(.vtex-store-components-3-x-currencyContainer--product-price) {
+  font-family: "Gotham Regular";
+  text-transform: uppercase;
+  color: #ff511d;
+}
+
+.productNameContainer--product-name {
+  max-width: 1280px;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 5px;
+  font-family: "Gotham Regular";
+  text-transform: uppercase;
+}
+.sellingPrice {
+  padding-left: 0 !important;
+  text-align: left;
+  margin-bottom: 0px;
+  font-family: "Gotham Regular";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.sellingPriceContainer {
+  text-align: start;
+}
+
+.imageElement--imagen-search-not-found {
+  max-width: 375px;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-title) {
+  font-size: 14px;
+  color: #393939;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eaeaea;
+}
+.subscriberContainer :global(.vtex-store-components-3-x-content) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-input) {
+  margin-right: 0;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-input) {
+  width: 90%;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-submit) {
+  justify-content: center;
+}
+
+.subscriberContainer :global(.vtex-input-prefix__group) {
+  height: 55px;
+  border-color: #aaaaaa;
+  border-radius: 10px;
+}
+
+.subscriberContainer :global(.vtex-button__label) {
+  width: 100%;
+  font-family: "Lato";
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: white;
+}
+
+.subscriberContainer :global(.vtex-styleguide-9-x-input) {
+  text-align: center;
+}
+
+.subscriberContainer :global(.vtex-button) {
+  height: 55px;
+  background-color: #ff511d;
+  overflow: hidden;
+  color: white;
+  border-radius: 10px;
+  width: 90%;
+}
+
+:global(.vtex-minicart-2-x-overlay--visible) {
+  background: rgb(0 0 0 / 0.6) !important;
+}
+
+:global(.vtex-store-drawer-0-x-overlay) {
+  background: rgb(0 0 0 / 0.6) !important;
+}
+
+.subscriberContainer :global(.vtex-button) :hover {
+  cursor: pointer;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-submit) {
+  width: 100%;
+  background: transparent;
+}
+
+.subscribeLabel {
+  color: #393939;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.priceContainer {
+  margin-bottom: 0.5rem;
+}
+
+.shareButtons {
+  display: inline-flex;
+}
+
+.productBrandContainer--marca-product {
+  text-align: left;
+  font-size: 22px;
+  font-family: "Gotham Bold";
+}
+.productBrandContainer--marca-productos {
+  text-align: left;
+  font-size: 22px;
+  font-family: "Gotham Bold";
+  margin-bottom: 20px;
+}
+
+.price_listPriceContainer--product-price {
+  text-align: start;
+  padding-left: 0px;
+  position: relative;
+}
+
+.price_listPriceContainer--product-price::before {
+  content: "Precio Oferta:";
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  font-weight: bold;
+}
+
+.specificationsTabsContainer--specifications-product {
+  padding-top: 0;
+}
+.specificationsTable--specifications-product {
+  text-align: center;
+}
+.specificationsTablePropertyHeading--specifications-product {
+  text-align: center;
+}
+.specificationsTableSpecificationHeading--specifications-product {
+  text-align: center;
+}
+
+.productDescriptionText--descripcion {
+  font-family: "Gotham Regular";
+  text-align: left;
+  font-size: 14px;
+  margin-left: 0px;
+  position: relative;
+  margin-block-start: 0px !important;
+  padding-inline-start: 0 !important;
+}
+
+.product-identifier__label {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+:global(.vtex-product-identifier-0-x-product-identifier__value) {
+  margin-left: 0.4rem;
+}
+
+.productDescriptionTitle--descripcion {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Gotham Regular";
+  display: none;
+}
+.shareLabel {
+  font-family: "Gotham Regular";
+}
+
+.savings--discountInsideContainer {
+  background: #ff511d;
+}
+.listPriceLabel {
+  display: none;
+}
+.listPriceValue {
+  font-size: 20px;
+}
+.sellingPriceLabel {
+  display: none;
+}
+.highQualityProductImageImgElement {
+  max-height: 600px;
+}
+.productBrand--product-name {
+  font-weight: 600;
+}
+.productDescriptionContainer--descripcion {
+  width: 90%;
+}
+
+.shippingContainer {
+  margin-top: 20px;
+}
+
+/* .shippingTableCellDeliveryName {
+  display: none;
+} */
+/* .shippingTableCellDeliveryEstimate::before {
+  content: "Icono";
+  background-image: url(https://killstorecl.vteximg.com.br/arquivos/Envio.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 5px 0px;
+  height: 50px;
+  width: 50px;
+  color: transparent;
+  padding: 3px;
+} */
+
+.shippingContainer :global(.vtex-button) {
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+.shippingNoMessage {
+  font-size: 0;
+  margin-top: 2px;
+}
+.shippingNoMessage::after {
+  content: "No es posible calcular despacho de un producto sin stock. Intente con otro producto o aguarde que tengamos unidades disponibles nuevamente.";
+  font-size: 14px;
+}
+
+.productBrandLogoWrapper--marca-productos {
+  display: flex;
+}
+
+.imageElement--imagen-categoria {
+  border-radius: 10px;
+}
+
+.imageElement--imagen-categoria-first {
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .price_listPriceContainer--product-price {
+    text-align: left;
+    padding-left: 0px;
+  }
+  .sellingPrice {
+    padding: 0;
+  }
+  :global(.vtex-product-summary-2-x-element--product-summary) .sellingPrice {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  .sellingPriceContainer {
+    text-align: start;
+  }
+  :global(.vtex-product-summary-2-x-element--product-summary)
+    .sellingPriceContainer {
+    text-align: center;
+  }
+  .productBrand--product-name {
+    margin-left: 0px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .productBrandLogoWrapper--marca-productos {
+    height: 50px !important;
+  }
+  .productBrandLogo--marca-productos {
+    height: 50px !important;
+  }
+
+  .productImagesGallerySlide--image-producto {
+    width: 100% !important;
+  }
+  .specificationsTable--specifications-product {
+    width: 100% !important;
+  }
+  .productImagesContainer--image-producto {
+    width: 100%;
+  }
+  .productBrandContainer--marca-productos {
+    margin-bottom: 0;
+    display: flex;
+  }
+  .productDescriptionContainer--descripcion {
+    width: 100%;
+  }
+
+  .imageElement--pre-cyber {
+    width: 80% !important;
+  }
+}
+
+/* Footer */
+
+.container--form-newsletter {
+  padding-top: 0 !important;
+}
+
+.imageElement--logo-footer {
+  margin-left: 90%;
+  margin-top: 25px;
+}
+
+.imageElement--logo-footer-mobile {
+  margin-top: 25px !important;
+  margin: auto;
+}
+
+.imageElementLink--logo-vtex-mobile {
+  width: 30%;
+  margin: auto;
+}
+
+.imageElementLink--logo-ko-mobile {
+  width: 60%;
+}
+
+.imageElementLink--logo-vtex {
+  width: 40%;
+}
+
+.imageElementLink--imagen-item-header {
+  height: 26px;
+}
+
+.imageElement--imagen-item-header {
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageElementLink--logo-ko {
+  width: 75%;
+}
+
+.imageElement--logo-vtex-mobile {
+  margin-left: 35%;
+}
+
+.specificationsTitle--specifications-product {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Gotham Regular";
+  display: block;
+  margin-top: 15px;
+}
+.specificationsTableContainer--specifications-product {
+  padding-left: 0px;
+  margin-top: 5px;
+}
+.specificationItemProperty {
+  font-size: 15px;
+}
+.imageElement--flag {
+  position: relative;
+  top: 50%;
+  right: -220px;
+  z-index: 5;
+  margin-bottom: -49px;
+}
+
+.imageElement--flag-preventa {
+  top: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.imageElementLink--imagen-categoria-first {
+  margin: 5px;
+}
+
+/*disponible envio*/
+.imageElement--disponible-envio {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+/*imagen garantia*/
+.imageElement--devolucion {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.6rem;
+}
+
+/*Imagenes producto*/
+.productImagesContainer--image-producto--carousel {
+  padding-right: 0.8rem;
+}
+.productImage--image-producto .triggerContainer--image-producto {
+  width: 100%;
+}
+
+.figure--image-producto {
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+}
+
+/*Imagenes modal*/
+
+.content--image-modal {
+  margin-top: 3rem;
+}
+
+.productImagesThumb--image-modal {
+  margin: 1rem 0.5rem 1rem 0;
+  flex: 0 0 calc(45% - 0px);
+  height: 88px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImagesThumbActive--image-modal {
+  border: 1.5px solid #ff511d;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.productImagesThumbActive--image-modal .thumbImg--image-modal {
+  border-radius: 10px;
+}
+
+.productImagesGallerySwiperContainer--image-modal {
+  max-width: 700px;
+  margin: 0 auto;
+  margin: 0 0 0 4rem;
+}
+
+.productNameContainer--name-modal {
+  text-align: start;
+}
+
+/*share*/
+.shareContainer .shareLabel {
+  display: none;
+}

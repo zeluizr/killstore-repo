@@ -1,0 +1,948 @@
+{
+  "vtex.menu@2.x:menu#footer#Institucionales": {
+    "children": [
+      "menu-item#Ayuda#PoliticaEnvio",
+      "menu-item#Ayuda#Terminos-condiciones",
+      "menu-item#Ayuda#Preguntas-frecuentes",
+      "menu-item#Ayuda#PoliticaDevolucion",
+      "menu-item#Ayuda#Trabaja-Nosotros"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:menu#categorias-nav": {
+    "children": [
+      "menu-item#categorias-nav#Categorias",
+      "menu-item#categorias-nav#KillieKits",
+      "menu-item#categorias-nav#Ofertas"
+    ],
+    "props": {
+      "blockClass": "categorias-nav-header"
+    }
+  },
+  "vtex.menu@2.x:submenu#Categorias": {
+    "children": [
+      "menu-item#Categorias-Fotografia",
+      "menu-item#Categorias-Video",
+      "menu-item#Categorias-Iluminacion",
+      "menu-item#Categorias-Drones",
+      "menu-item#Categorias-Computacion",
+      "menu-item#Categorias-Audio",
+      "menu-item#Categorias-Transporte",
+      "menu-item#Categorias-Estudio",
+      //"menu-item#Categorias-Gaming",
+      "menu-item#Categorias-Cursos",
+      "menu-item#Categorias-Binoculares",
+      "menu-item#Categorias-Novedades",
+      "menu-item#Categorias-Oferta"
+    ],
+    "props": {
+      "blockClass": "submenu-header",
+      "orientation": "vertical",
+      "preventHorizontalStretch": true
+    }
+  },
+  "vtex.menu@2.x:submenu#Categorias-Audio": {
+    "children": [
+      "rich-text#header-menu-title-audio",
+      "flex-layout.row#Menu-categorias-Audio"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-audio": {
+    "props": {
+      "text": "Audio [Ver todo](/Audio)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Audio": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Audio-Microfonos",
+      "flex-layout.col#Menu-categorias-Audio-Audifonos",
+      "flex-layout.col#Menu-categorias-Audio-Grabadoras",
+      "flex-layout.col#Menu-categorias-Audio-Monitores",
+      "flex-layout.col#Menu-categorias-Audio-Interfaces",
+      "flex-layout.col#Menu-categorias-Audio-Instrumentos"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "flex-layout.col#Menu-categorias-Audio-Audifonos": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Audio-Audifonos",
+      "menu-item#Categorias-Audio-Audifonos-headset",
+      "menu-item#Categorias-Audio-Audifonos-inears",
+      "menu-item#Categorias-Audio-Audifonos-intercomunicadores",
+      "menu-item#Categorias-Audio-Audifonos-onears",
+      "menu-item#Categorias-Audio-Audifonos-overears"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Audio-Grabadoras": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Audio-Grabadoras",
+      "menu-item#Categorias-Audio-Grabadoras-Accesorios",
+      "menu-item#Categorias-Audio-Grabadoras-DeCampo",
+      "menu-item#Categorias-Audio-Grabadoras-DeEstudio"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Audio-Interfaces": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Audio-Interfaces",
+      "menu-item#Categorias-Audio-Interfaces-Interfaces",
+      "menu-item#Categorias-Audio-Interfaces-Consolas"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Audio-Instrumentos": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Audio-Instrumentos",
+      "menu-item#Categorias-Audio-Instrumentos-Bajos",
+      "menu-item#Categorias-Audio-Instrumentos-Baterias",
+      "menu-item#Categorias-Audio-Instrumentos-Guitarras",
+      "menu-item#Categorias-Audio-Instrumentos-Teclados"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Audio-Microfonos": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Audio-Microfonos",
+      "menu-item#Categorias-Audio-Microfonos-Accesorios",
+      "menu-item#Categorias-Audio-Microfonos-Condensadores",
+      "menu-item#Categorias-Audio-Microfonos-Dinamicos",
+      "menu-item#Categorias-Audio-Microfonos-Lavaliers",
+      "menu-item#Categorias-Audio-Microfonos-Shotguns"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Audio-Monitores": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Audio-Monitores",
+      "menu-item#Categorias-Audio-Monitores-Accesorios",
+      "menu-item#Categorias-Audio-Monitores-Activos",
+      "menu-item#Categorias-Audio-Monitores-Pasivos"
+    ]
+  },
+  "vtex.menu@2.x:submenu#Categorias-Computacion": {
+    "children": [
+      "rich-text#header-menu-title-computacion",
+      "flex-layout.row#Menu-categorias-Computacion"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-computacion": {
+    "props": {
+      "text": "Computación [Ver todo](/computacion)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Computacion": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Computacion-Componentes",
+      "flex-layout.col#Menu-categorias-Computacion-Varios",
+      "flex-layout.col#Menu-categorias-Computacion-Varios2",
+      "flex-layout.col#Menu-categorias-Computacion-Monitores",
+      "flex-layout.col#Menu-categorias-Computacion-Mouse",
+      "flex-layout.col#Menu-categorias-Computacion-Audio",
+      "flex-layout.col#Menu-categorias-Computacion-Almacenamiento",
+      "flex-layout.col#Menu-categorias-Computacion-Gaming"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "flex-layout.col#Menu-categorias-Computacion-Almacenamiento": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Computacion-Almacenamiento",
+      "menu-item#Categorias-Computacion-Almacenamiento-Discos",
+      "menu-item#Categorias-Computacion-Almacenamiento-Lectores",
+      "menu-item#Categorias-Computacion-Almacenamiento-MicroSD",
+      "menu-item#Categorias-Computacion-Almacenamiento-MemoriaSD"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Computacion-Gaming": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Computacion-Gaming"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Computacion-Audio": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Computacion-Audio",
+      "menu-item#Categorias-Computacion-Audio-Audifonos",
+      "menu-item#Categorias-Computacion-Audio-Microfonos"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Computacion-Monitores": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Computacion-Monitores",
+      "menu-item#Categorias-Computacion-Monitores-Cables",
+      "menu-item#Categorias-Computacion-Monitores-Monitores",
+      "menu-item#Categorias-Computacion-Monitores-Lentes"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Computacion-Varios": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Computacion-Varios-Pcs",
+      "menu-item#Categorias-Computacion-Varios-Notebooks",
+      "menu-item#Categorias-Computacion-Varios-Tablets"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Computacion-Componentes": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Computacion-Componentes",
+      "menu-item#Categorias-Computacion-Componentes-Discos",
+      "menu-item#Categorias-Computacion-Componentes-Fuentes",
+      "menu-item#Categorias-Computacion-Componentes-Gabinetes",
+      "menu-item#Categorias-Computacion-Componentes-Memorias",
+      "menu-item#Categorias-Computacion-Componentes-Mother",
+      "menu-item#Categorias-Computacion-Componentes-Procesadores",
+      "menu-item#Categorias-Computacion-Componentes-Refrigeracion",
+      "menu-item#Categorias-Computacion-Componentes-Tarjetas"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Computacion-Mouse": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Computacion-Mouse",
+      "menu-item#Categorias-Computacion-Mouse-Teclado",
+      "menu-item#Categorias-Computacion-Mouse-Mouse",
+      "menu-item#Categorias-Computacion-Mouse-Pads"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Computacion-Varios2": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Computacion-Mouse-Calibradores",
+      "menu-item#Categorias-Computacion-Mouse-Webcam",
+      "menu-item#Categorias-Computacion-Varios-Software",
+      "menu-item#Categorias-Computacion-Mouse-Impresoras",
+      "menu-item#Categorias-Computacion-Varios-Sillas",
+      "menu-item#Categorias-Computacion-Mouse-Capturadoras",
+      "menu-item#Categorias-Computacion-Varios-Modems"
+    ]
+  },
+  "vtex.menu@2.x:submenu#Categorias-Drones": {
+    "children": [
+      "rich-text#header-menu-title-drones",
+      "flex-layout.row#Menu-categorias-Drones"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-drones": {
+    "props": {
+      "text": "Drones [Ver todo](/drones)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Drones": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Drones-1"
+    ],
+    "props": {
+      "blockClass": "row-menu",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#Menu-categorias-Drones-1": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Drones-Drones",
+      "menu-item#Categorias-Drones-Transporte",
+      "menu-item#Categorias-Drones-Energia",
+      "menu-item#Categorias-Drones-Accesorios",
+      "menu-item#Categorias-Drones-Filtros",
+      "menu-item#Categorias-Drones-Submarino"
+    ]
+  },
+  "vtex.menu@2.x:submenu#Categorias-Estudio": {
+    "children": [
+      "rich-text#header-menu-title-estudio",
+      "flex-layout.row#Menu-categorias-Estudio"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-estudio": {
+    "props": {
+      "text": "Estudio [Ver todo](/estudio)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Estudio": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Estudio-Soportes",
+      "flex-layout.col#Menu-categorias-Estudio-Fondos",
+      "flex-layout.col#Menu-categorias-Estudio-Accesorios",
+      "flex-layout.col#Menu-categorias-Estudio-Reflectores"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "vtex.menu@2.x:submenu#Categorias-Cursos": {
+    "children": [
+      "rich-text#header-menu-title-cursos",
+      "flex-layout.row#Menu-categorias-cursos"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-cursos": {
+    "props": {
+      "text": "Cursos [Ver todo](/cursos)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-cursos": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Cursos-online",
+      "flex-layout.col#Menu-categorias-Cursos-presencial"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "flex-layout.col#Menu-categorias-Estudio-Reflectores": {
+    "children": [
+      "menu-item#Categorias-Estudio-Reflectores"
+    ],
+    "props": {
+      "blockClass": "col-menu",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#Menu-categorias-Estudio-Accesorios": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Estudio-Accesorios",
+      "menu-item#Categorias-Estudio-Accesorios-Cables",
+      "menu-item#Categorias-Estudio-Accesorios-Cintas",
+      "menu-item#Categorias-Estudio-Accesorios-Gelatinas",
+      "menu-item#Categorias-Estudio-Accesorios-Miscelaneos"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Estudio-Fondos": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Estudio-Fondos",
+      "menu-item#Categorias-Estudio-Fondos-Madera",
+      "menu-item#Categorias-Estudio-Fondos-Papel",
+      "menu-item#Categorias-Estudio-Fondos-Tela"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Estudio-Soportes": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Estudio-Soportes",
+      "menu-item#Categorias-Estudio-Soportes-Accesorios",
+      "menu-item#Categorias-Estudio-Soportes-C-Stands",
+      "menu-item#Categorias-Estudio-Soportes-Pies",
+      "menu-item#Categorias-Estudio-Soportes-Fondos",
+      "menu-item#Categorias-Estudio-Soportes-Tripodes"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Cursos-online": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Cursos-Online-Desktop"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Cursos-presencial": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Cursos-presencial"
+    ]
+  },
+  "vtex.menu@2.x:submenu#Categorias-Fotografia": {
+    "children": [
+      "rich-text#header-menu-title-fotografia",
+      "flex-layout.row#Menu-categorias-Fotografia"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-fotografia": {
+    "props": {
+      "text": "Fotografía [Ver todo](/fotografia)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Fotografia": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Fotografia-Camaras",
+      "flex-layout.col#Menu-categorias-Fotografia-Energia",
+      "flex-layout.col#Menu-categorias-Fotografia-Accesorios",
+      "flex-layout.col#Menu-categorias-Fotografia-Lentes",
+      "flex-layout.col#Menu-categorias-Fotografia-Tripodes",
+      "flex-layout.col#Menu-categorias-Fotografia-Almacenamiento"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "flex-layout.col#Menu-categorias-Fotografia-Accesorios": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Fotografia-Accesorios",
+      "menu-item#Categorias-Fotografia-Accesorios-Cables",
+      "menu-item#Categorias-Fotografia-Accesorios-Correas",
+      "menu-item#Categorias-Fotografia-Accesorios-Disparadores",
+      "menu-item#Categorias-Fotografia-Accesorios-Proteccion",
+      "menu-item#Categorias-Fotografia-Accesorios-Submarina"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Fotografia-Almacenamiento": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Fotografia-Almacenamiento",
+      "menu-item#Categorias-Fotografia-Almacenamiento-Estuches",
+      "menu-item#Categorias-Fotografia-Almacenamiento-Lectores",
+      "menu-item#Categorias-Fotografia-Almacenamiento-MemoriasCF",
+      "menu-item#Categorias-Fotografia-Almacenamiento-Memorias-Express",
+      "menu-item#Categorias-Fotografia-Almacenamiento-Memorias-Fast",
+      "menu-item#Categorias-Fotografia-Almacenamiento-Memorias-MicroSD",
+      "menu-item#Categorias-Fotografia-Almacenamiento-Memorias-SD",
+      "menu-item#Categorias-Fotografia-Almacenamiento-Memorias-XQD"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Fotografia-Camaras": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Fotografia-Camaras",
+      "menu-item#Categorias-Fotografia-Camaras-Compactas",
+      "menu-item#Categorias-Fotografia-Camaras-Mirrorless",
+      "menu-item#Categorias-Fotografia-Camaras-Reflex"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Fotografia-Energia": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Fotografia-Energia",
+      "menu-item#Categorias-Fotografia-Energia-Baterias",
+      "menu-item#Categorias-Fotografia-Energia-Battery",
+      "menu-item#Categorias-Fotografia-Energia-Cargadores"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Fotografia-Lentes": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Fotografia-Lentes",
+      "menu-item#Categorias-Fotografia-Lentes-Accesorios",
+      "menu-item#Categorias-Fotografia-Lentes-Cannon-EF",
+      "menu-item#Categorias-Fotografia-Lentes-Cannon-M",
+      "menu-item#Categorias-Fotografia-Lentes-Cannon-RF",
+      "menu-item#Categorias-Fotografia-Lentes-Fujifilm-GF",
+      "menu-item#Categorias-Fotografia-Lentes-Fujifilm-X",
+      "menu-item#Categorias-Fotografia-Lentes-Montura-M",
+      "menu-item#Categorias-Fotografia-Lentes-Nikon-F",
+      "menu-item#Categorias-Fotografia-Lentes-Nikon-Z",
+      "menu-item#Categorias-Fotografia-Lentes-Sony"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Fotografia-Tripodes": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Fotografia-Tripodes",
+      "menu-item#Categorias-Fotografia-Tripodes-Accesorios",
+      "menu-item#Categorias-Fotografia-Tripodes-Cabezales",
+      "menu-item#Categorias-Fotografia-Tripodes-Kits",
+      "menu-item#Categorias-Fotografia-Tripodes-Fotografia"
+    ]
+  },
+  "vtex.menu@2.x:submenu#Categorias-Gaming": {
+    "children": [
+      "rich-text#header-menu-title-gaming"
+      // "flex-layout.row#Menu-categorias-Gaming"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-gaming": {
+    "props": {
+      "text": "Gaming [Ver todo](/gaming)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Gaming": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Gaming-Todos"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "flex-layout.col#Menu-categorias-Gaming-Todos": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      /*"menu-item#Categorias-Gaming-Playstation",*/
+      "menu-item#Categorias-Gaming-Nintendo",
+      "menu-item#Categorias-Gaming-Streaming",
+      "menu-item#Categorias-Gaming-Xbox2"
+    ]
+  },
+  "vtex.menu@2.x:submenu#Categorias-Iluminacion": {
+    "children": [
+      "rich-text#header-menu-title-iluminacion",
+      "flex-layout.row#Menu-categorias-Iluminacion"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-iluminacion": {
+    "props": {
+      "text": "Iluminación [Ver todo](/iluminacion)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Iluminacion": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Iluminacion-Flash-Speedlight",
+      "flex-layout.col#Menu-categorias-Iluminacion-Accesorios",
+      "flex-layout.col#Menu-categorias-Iluminacion-Continua",
+      "flex-layout.col#Menu-categorias-Iluminacion-Flash-Estudio",
+      "flex-layout.col#Menu-categorias-Iluminacion-Soportes",
+      "flex-layout.col#Menu-categorias-Iluminacion-Varios",
+      "flex-layout.col#Menu-categorias-Iluminacion-Modificadores"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "flex-layout.col#Menu-categorias-Iluminacion-Accesorios": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Iluminacion-Accesorios",
+      "menu-item#Categorias-Iluminacion-Accesorios-Adaptadores",
+      "menu-item#Categorias-Iluminacion-Accesorios-Baterias",
+      "menu-item#Categorias-Iluminacion-Accesorios-Fotometros",
+      "menu-item#Categorias-Iluminacion-Accesorios-Transporte",
+      "menu-item#Categorias-Iluminacion-Accesorios-Tubos"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Iluminacion-Flash-Estudio": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Iluminacion-Flash",
+      "menu-item#Categorias-Iluminacion-Flash-Cabezales",
+      "menu-item#Categorias-Iluminacion-Flash-Kits"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Iluminacion-Flash-Speedlight": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Iluminacion-Flash-Speedlight",
+      "menu-item#Categorias-Iluminacion-Flash-Speedlight-Cannon",
+      "menu-item#Categorias-Iluminacion-Flash-Speedlight-Fuji",
+      "menu-item#Categorias-Iluminacion-Flash-Speedlight-Nikon",
+      "menu-item#Categorias-Iluminacion-Flash-Speedlight-Panasonic",
+      "menu-item#Categorias-Iluminacion-Flash-Speedlight-Sony"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Iluminacion-Continua": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Iluminacion-Continua",
+      "menu-item#Categorias-Iluminacion-Continua-Ampolleta",
+      "menu-item#Categorias-Iluminacion-Continua-Cannones",
+      "menu-item#Categorias-Iluminacion-Continua-Paneles",
+      "menu-item#Categorias-Iluminacion-Continua-Ring",
+      "menu-item#Categorias-Iluminacion-Continua-Tubos"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Iluminacion-Modificadores": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Iluminacion-Modificadores",
+      "menu-item#Categorias-Iluminacion-Modificadores-Barndoor",
+      "menu-item#Categorias-Iluminacion-Modificadores-Gelatinas",
+      "menu-item#Categorias-Iluminacion-Modificadores-Lantern",
+      "menu-item#Categorias-Iluminacion-Modificadores-Octabox",
+      "menu-item#Categorias-Iluminacion-Modificadores-Speedlight",
+      "menu-item#Categorias-Iluminacion-Modificadores-Proyeccion",
+      "menu-item#Categorias-Iluminacion-Modificadores-Reflectores",
+      "menu-item#Categorias-Iluminacion-Modificadores-Softbox",
+      "menu-item#Categorias-Iluminacion-Modificadores-Sombrillas"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Iluminacion-Soportes": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Iluminacion-Soportes",
+      "menu-item#Categorias-Iluminacion-Soportes-Stand",
+      "menu-item#Categorias-Iluminacion-Soportes-Flash"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Iluminacion-Varios": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Iluminacion-Triggers",
+      "menu-item#Categorias-Iluminacion-Kits",
+      "menu-item#Categorias-Iluminacion-Reflectores"
+    ]
+  },
+  "vtex.menu@2.x:submenu#Categorias-Transporte": {
+    "children": [
+      "rich-text#header-menu-title-transporte",
+      "flex-layout.row#Menu-categorias-Transporte"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-transporte": {
+    "props": {
+      "text": "Transporte [Ver todo](/transporte)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Transporte": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Transporte-Todos"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "flex-layout.col#Menu-categorias-Transporte-Todos": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Transporte-Mochilas",
+      "menu-item#Categorias-Transporte-Maletas",
+      "menu-item#Categorias-Transporte-Bolsos",
+      // "menu-item#Categorias-Transporte-Fundas",
+      "menu-item#Categorias-Transporte-Estuches"
+    ]
+  },
+  "vtex.menu@2.x:submenu#Categorias-Video": {
+    "children": [
+      "rich-text#header-menu-title-video",
+      "flex-layout.row#Menu-categorias-Video"
+    ],
+    "props": {
+      "blockClass": "submenu-2-header",
+      "orientation": "horizontal"
+    }
+  },
+  "rich-text#header-menu-title-video": {
+    "props": {
+      "text": "Video [Ver todo](/video)",
+      "textPosition": "LEFT",
+      "blockClass": "texto-titulo-menu-header"
+    }
+  },
+  "flex-layout.row#Menu-categorias-Video": {
+    "children": [
+      "flex-layout.col#Menu-categorias-Video-Camaras",
+      "flex-layout.col#Menu-categorias-Video-Lentes",
+      "flex-layout.col#Menu-categorias-Video-Monitoreo",
+      "flex-layout.col#Menu-categorias-Video-Mezcladores",
+      "flex-layout.col#Menu-categorias-Video-Rig",
+      "flex-layout.col#Menu-categorias-Video-Tripodes",
+      "flex-layout.col#Menu-categorias-Video-Energia",
+      "flex-layout.col#Menu-categorias-Video-Movimiento",
+      "flex-layout.col#Menu-categorias-Video-Almacenamiento",
+      "flex-layout.col#Menu-categorias-Video-Cables"
+    ],
+    "props": {
+      "blockClass": "row-menu"
+    }
+  },
+  "flex-layout.col#Menu-categorias-Video-Almacenamiento": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Almacenamiento",
+      "menu-item#Categorias-Video-Almacenamiento-Discos",
+      "menu-item#Categorias-Video-Almacenamiento-Lectores",
+      "menu-item#Categorias-Video-Almacenamiento-Memorias"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Cables": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Cables",
+      "menu-item#Categorias-Video-Cables-Display",
+      "menu-item#Categorias-Video-Cables-HDMI",
+      "menu-item#Categorias-Video-Cables-SDI"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Camaras": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Camaras",
+      "menu-item#Categorias-Video-Camaras-Cinematograficas",
+      "menu-item#Categorias-Video-Camaras-Accion",
+      "menu-item#Categorias-Video-Camaras-Mirrorless",
+      "menu-item#Categorias-Video-Camaras-Videocamaras",
+      "menu-item#Categorias-Video-Camaras-Profesionales"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Energia": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Energia",
+      "menu-item#Categorias-Video-Energia-Baterias",
+      "menu-item#Categorias-Video-Energia-Cables",
+      "menu-item#Categorias-Video-Energia-Cargadores",
+      "menu-item#Categorias-Video-Energia-Placas"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Lentes": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Lentes",
+      "menu-item#Categorias-Video-Lentes-Accesorios",
+      "menu-item#Categorias-Video-Lentes-Cannon-EF",
+      "menu-item#Categorias-Video-Lentes-Cannon-RF",
+      "menu-item#Categorias-Video-Lentes-M",
+      "menu-item#Categorias-Video-Lentes-Nikon",
+      "menu-item#Categorias-Video-Lentes-PL",
+      "menu-item#Categorias-Video-Lentes-Sony"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Mezcladores": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Mezcladores",
+      "menu-item#Categorias-Video-Mezcladores-Capturadores",
+      "menu-item#Categorias-Video-Mezcladores-Controladores",
+      "menu-item#Categorias-Video-Mezcladores-Convertidores",
+      "menu-item#Categorias-Video-Mezcladores-Switchers"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Monitoreo": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Monitores",
+      "menu-item#Categorias-Video-Monitores-Accesorios",
+      "menu-item#Categorias-Video-Monitores-Grabadores",
+      "menu-item#Categorias-Video-Monitores-Camara",
+      "menu-item#Categorias-Video-Monitores-Campo",
+      "menu-item#Categorias-Video-Monitores-Transmisores"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Movimiento": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Movimiento",
+      "menu-item#Categorias-Video-Movimiento-Accesorios",
+      "menu-item#Categorias-Video-Movimiento-Control",
+      "menu-item#Categorias-Video-Movimiento-Gimbals",
+      "menu-item#Categorias-Video-Movimiento-Sliders"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Rig": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Rig",
+      "menu-item#Categorias-Video-Rig-Accesorios",
+      "menu-item#Categorias-Video-Rig-Cages",
+      "menu-item#Categorias-Video-Rig-Follow",
+      "menu-item#Categorias-Video-Rig-Mattebox",
+      "menu-item#Categorias-Video-Rig-Monturas"
+    ]
+  },
+  "flex-layout.col#Menu-categorias-Video-Tripodes": {
+    "props": {
+      "blockClass": "col-menu",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "menu-item#Categorias-Video-Tripodes",
+      "menu-item#Categorias-Video-Tripodes-Accesorios",
+      "menu-item#Categorias-Video-Tripodes-Cabezales",
+      "menu-item#Categorias-Video-Tripodes-Kits",
+      "menu-item#Categorias-Video-Tripodes-Video"
+    ]
+  },
+  /* MOBILE */
+  "vtex.menu@2.x:submenu#Categorias-mobile": {
+    "children": [
+      "menu-item#Categorias-Fotografia-mobile",
+      "menu-item#Categorias-Video-mobile",
+      "menu-item#Categorias-Audio-mobile",
+      "menu-item#Categorias-Computacion-mobile",
+      "menu-item#Categorias-Drones-mobile",
+      "menu-item#Categorias-Transporte-mobile",
+      "menu-item#Categorias-Iluminacion-mobile",
+      "menu-item#Categorias-Estudio-mobile",
+      "menu-item#Categorias-Cursos-Online-mobile",
+      "menu-item#Categorias-Binoculares-mobile",
+      "menu-item#Categorias-Gaming-mobile"
+    ],
+    "props": {
+      "blockClass": "submenu-header-mobile",
+      "orientation": "vertical"
+    }
+  }
+}

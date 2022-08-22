@@ -1,0 +1,107 @@
+{
+  "my-account-link.wishlist-link": {
+    "props": {
+      "label": "Favoritos"
+    }
+  },
+  "my-account-page.wishlist-page": {
+    "children": [
+      "flex-layout.row#top-wishlist",
+      "list-context.wishlist"
+    ]
+  },
+  "store.wishlist": {
+    "blocks": [
+      "flex-layout.row#top-wishlist",
+      "list-context.wishlist"
+    ]
+  },
+  "flex-layout.row#top-wishlist": {
+    "children": [
+      "flex-layout.col#title-wish"
+    ]
+  },
+  "flex-layout.col#title-wish": {
+    "children": [
+      "rich-text#title-wish"
+    ],
+    "props": {
+      "blockClass": "titleWishlist",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title-wish": {
+    "props": {
+      "text": "### Wishlist"
+    }
+  },
+  "list-context.wishlist": {
+    "blocks": [
+      "product-summary.shelf#wishlist"
+    ],
+    "children": [
+      "slider-layout#wishlist"
+    ]
+  },
+  "product-summary.shelf#wishlist": {
+    "children": [
+      /*"vtex.product-highlights@1.x:product-highlights#Medalla-Cyber",*/
+      "add-to-list-btn",
+      "vtex.product-highlights@1.x:product-highlights#Medalla-Preventa",
+      "product-summary-image",
+      "product-summary-name",
+      "flex-layout.row#shelf-reviews-and-rating",
+      "flex-layout.row#product-price-list-shelf",
+      //"product-summary-price",
+      "product-price-transfer",
+      "flex-layout.row#product-installments-shelf",
+      "add-to-cart-button#product"
+    ]
+  },
+  "slider-layout#wishlist": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "infinite": false,
+      "fullWidth": true,
+      "blockClass": "shelf"
+    }
+  },
+  "list-context.wishlist#header": {
+    "blocks": [
+      "product-summary.shelf#wishlist-header"
+    ],
+    "children": [
+      "list-context-renderer#wrapped"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "product-summary.shelf#wishlist-header": {
+    "children": [
+      /*"vtex.product-highlights@1.x:product-highlights#Medalla-Cyber",*/
+      "add-to-list-btn",
+      "vtex.product-highlights@1.x:product-highlights#Medalla-Preventa",
+      "product-summary-image",
+      "product-summary-name",
+      "flex-layout.row#shelf-reviews-and-rating",
+      "flex-layout.row#product-price-list-shelf",
+      //"product-summary-price",
+      "product-price-transfer",
+      "flex-layout.row#product-installments-shelf",
+      "add-to-cart-button#product"
+    ]
+  },
+  "list-context-renderer#wrapped": {
+    "props": {
+      "listElement": "ul",
+      "itemElement": "li"
+    }
+  }
+}

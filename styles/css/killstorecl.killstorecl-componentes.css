@@ -1,0 +1,19 @@
+.CustomContainer--slider{
+    padding-top: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.CustomContainer--slider :global(.vtex-store-components-3-x-imageElement--homecustom){
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .CustomContainer--slider{
+        padding-top: 0;
+    }
+
+    .CustomContainer--slider :global(.vtex-store-components-3-x-imageElement--homecustom){
+        border-radius: 0px;
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "store.custom#politicas-envio": {
+        "blocks": [
+            "flex-layout.row#institucional-politicas-envio"
+        ]
+    },
+    "flex-layout.row#institucional-politicas-envio":{
+        "children":[
+            "flex-layout.col#institucional-politicas-envio"
+        ],
+        "props":{
+            "blockClass": "row-institucional",
+            "horizontalAlign": "left"
+        }
+    },
+    "flex-layout.col#institucional-politicas-envio":{
+        "children":[
+            "rich-text#politicas-envio",
+            "rich-text#politicas-envio2"
+        ],
+        "props":{
+            "blockClass": "col-institucional",
+            "horizontalAlign": "left"
+        }
+    },
+    "rich-text#politicas-envio": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "## **Políticas de envío**",
+            "blockClass": "institucional-titulo"
+        }
+    },
+    "rich-text#politicas-envio2": {
+        "props": {
+            "textAlignment": "left",
+            "textPosition": "Left",
+            "text": "### **Despachos y atención COVID-19** \n\n #### Queridísimos Killstorianos: \n\n Como es de conocimiento común, este miércoles 25 de Marzo el Minsal decretó cuarentena para 7 comunas de la Región Metropolitana, la cual tomó vigencia a partir del Jueves 26 de Marzo 2020 desde las 22:00 hrs y hasta nuevo aviso. Por este motivo consideramos de suma importancia entregarles la información de nuestra atención durante este periodo: \n\n **Compras en Línea:** \n\n -El servicio de despacho a domicilio continúa funcionando con normalidad en todo Chile. \n -Seguimos 100% disponibles para compras en página. \n -Nuestros horarios de atención en línea son: Lunes a Viernes de 10:30 a 23:00 hrs y Sábado: 10:30 a 16:00 hrs. Mediante FB, IG, correo electrónico y chat online del sitio web. \n\n **Atención a público:** \n\n A partir del viernes 27 de Marzo del 2020, el retiro en tienda está suspendido por periodo de cuarentena, hasta nuevo aviso del Minsal. \n\n **PostVenta:** \n\n -Las garantías deben canalizarse a través del correo: postventa@killstore.cl y el envío de productos debe hacerse a través de Courier previa coordinación con el equipo de PostVenta (costo será cubierto sólo en caso de fallas de fábrica). \n -Si los tiempos de garantía se ven aplazados por la cuarentena, los plazos de garantía se extenderán. \n -Productos validados para cambio o revisión en tienda previo a decreto de cuarentena, se coordinará acción posterior a esta. \n\n **Retiros pendientes en tienda:** \n\n -Las órdenes web disponibles para retiro desde el viernes 27/03/20 compradas antes de la fecha señalada podrán optar a despacho gratis (equipo de PostVenta se comunicará en cada caso). \n -Las órdenes web con retiro en tienda compradas desde el miércoles 25/03/2020 tendrán un tiempo de retiro superior al habitual. (Clientes podrán solicitar cambio a modalidad de despacho previo pago del servicio). \n -Para las órdenes web con retiro en tienda notificadas antes del 25/03/2020, el cliente puede optar por retirar en tienda posterior al periodo de cuarentena o solicitar cambio a modalidad de despacho previo pago del servicio. \n Todas las medidas aplicadas son en pos de evitar la propagación, nos importa el cuidado de cada uno de los integrantes de la familia KillStore y de todos nuestros maravillosos clientes, a quienes esperamos prontamente volver a ver y sonreír juntos en nuestras tiendas, pero ahora #QuedateEnCasa cuida de ti y de tu familia.",
+            "blockClass": "institucional"
+        }
+    }
+}

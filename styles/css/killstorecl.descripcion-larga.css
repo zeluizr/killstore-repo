@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.descripcionLarga {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 21px;
+}
+
+.contador {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  margin-right: 20px;
+}
+
+.tiempo {
+  font-size: 32px;
+}

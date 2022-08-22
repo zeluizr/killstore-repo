@@ -1,0 +1,189 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer#general"/*,
+      "flex-layout.row#footer#pie-de-pagina"*/
+      
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer#general"/*,
+      "flex-layout.row#footer#pie-de-pagina-mobile"*/
+    ]
+  },
+  "image#logo-footer":{
+    "props": {
+      "src": "/arquivos/logo-footer.png",
+      "maxWidth": 90,
+      "blockClass": "logo-footer"
+    }
+  },
+  "flex-layout.row#footer#logo-mobile":{
+    "children":[
+      "image#logo-footer-mobile"
+    ],
+    "props":{
+      "horizontalAlign":"left",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "footer-logo-mobile"
+    }
+  },
+  "image#logo-footer-mobile":{
+    "props": {
+      "src": "/arquivos/logo-footer.png",
+      "maxWidth": 90,
+      "blockClass": "logo-footer-mobile"
+    }
+  },
+  "flex-layout.row#footer#general": {
+    "children": [
+      "flex-layout.col#footer#Quienes-somos",
+      "flex-layout.col#footer#Ayuda",
+      "flex-layout.col#footer#Ubicanos"
+    ],
+    "props": {
+      "blockClass": "general-container"
+    }
+  },
+  "flex-layout.col#footer#Quienes-somos": {
+    "children": [
+      "rich-text#footer#Quienes-somos",
+      "image#medios-de-pago"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#footer#Quienes-somos": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Killstore es una tienda integral para fotógrafos, audiovisuales y generadores de contenido; acá podras encontrar desde un accesorio a todo tu equipamiento para producciones, reparación de equipos, arriendo de estudio, e incluso capacitarte a través de clases presenciales y online. \n\n **Casa Matriz: CERRADO** \n Eulogia Sanchez #065, Providencia, Santiago. \n\n **Las Condes: ABIERTO** \n Evaristo Lillo #48, Local 6, Las Condes, Santiago. \n **Horario:**Lunes a Viernes de 10:30hs a 14:00hs y 15:00hs a 19:00hs \n\n **Viña del Mar: ABIERTO** \n Av Libertad 63, Local 31, Viña del Mar. \n **Horario:** Lunes a Viernes de 10:30hs a 14:00hs y 15:00hs a 19:00hs \n\n",
+      "blockClass": "footer-general-somos"
+    }
+  },
+  "image#medios-de-pago":{
+    "props": {
+      "src": "/arquivos/medios_de_pago.png",
+      "blockClass": "medios-de-pago"
+    }
+  },
+  "flex-layout.col#footer#Ayuda": {
+    "children": [
+      "rich-text#footer#Institucionales",
+      "vtex.menu@2.x:menu#footer#Institucionales"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#footer#Institucionales": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**TÉRMINOS Y CONDICIONES**",
+      "blockClass": "footer-general-titulo"
+    }
+  },
+  "flex-layout.col#footer#Ubicanos": {
+    "children": [
+      "rich-text#footer#Ubicanos",
+      "iframe#ubicanos"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#footer#Ubicanos": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**UBÍCANOS**",
+      "blockClass": "footer-general-titulo"
+    }
+  },
+  "iframe#ubicanos": {
+    "props": {
+      "src": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13317.454921993136!2d-70.6334023!3d-33.439829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xddf49daf27b8d5f0!2sKillStore!5e0!3m2!1ses!2sar!4v1620321181881!5m2!1ses!2sar",
+      "blockClass": "mapa"
+    }
+  },
+  "flex-layout.row#footer#pie-de-pagina":{
+    "children":[
+      "image#logo-vtex",
+      "image#logo-ko"
+    ],
+    "props":{
+      "preventHorizontalStretch": true,
+      "horizontalAlign":"center",
+      "blockClass": "footer-pie-de-pagina"
+    }
+  },
+  "image#logo-vtex":{
+    "props": {
+      "src": "/arquivos/vtex-logo.png",
+      "link":{
+        "url": "https://www.vtex.com/"
+      },
+      "blockClass": "logo-vtex"
+    }
+  },
+  "image#logo-ko":{
+    "props": {
+      "src": "/arquivos/logo_ko.png",
+      "link":{
+        "url": "https://knownonline.com/"
+      },
+      "blockClass": "logo-ko"
+    }
+  },
+  "flex-layout.row#footer#pie-de-pagina-mobile":{
+    "children":[
+      "image#logo-vtex-mobile",
+      "image#logo-ko-mobile"
+    ],
+    "props":{
+      "preventHorizontalStretch": true,
+      "horizontalAlign":"center",
+      "blockClass": "footer-pie-de-pagina-mobile"
+    }
+  },
+  "image#logo-vtex-mobile":{
+    "props": {
+      "src": "/arquivos/vtex-logo.png",
+      "link":{
+        "url": "https://www.vtex.com/"
+      },
+      "blockClass": "logo-vtex-mobile"
+    }
+  },
+  "image#logo-ko-mobile":{
+    "props": {
+      "src": "/arquivos/logo_ko.png",
+      "link":{
+        "url": "https://knownonline.com/"
+      },
+      "blockClass": "logo-ko-mobile"
+    }
+  },
+  "flex-layout.row#footer#formas-pago":{
+    "children":[
+
+    ],
+    "props":{
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "horizontalAlign":"center",
+      "verticalAlign":"middle",
+      "blockClass": "footer-pago"
+    }
+  }
+}

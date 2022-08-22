@@ -1,0 +1,159 @@
+{
+    "store.custom#trabaja-con-nosotros": {
+      "children": [
+        "responsive-layout.desktop#trabaja",
+        "responsive-layout.mobile#trabaja"
+      ]
+    },
+    "responsive-layout.desktop#trabaja": {
+      "children": [
+        "flex-layout.row#trabaja-content"
+      ]
+    },
+    "image#trabaja-main-banner": {
+      "props": {
+        "src": "/arquivos/contacto principal.jpg",
+        "blockClass": ""
+      }
+    },
+    "flex-layout.row#trabaja-content": {
+      "props": {
+        "paddingTop": 2,
+        "paddingBottom": 10,
+        "blockClass": "trabaja-content"
+      },
+      "children": [
+        "flex-layout.col#trabaja-wrapper"
+      ]
+    },
+    "flex-layout.col#trabaja-wrapper": {
+      "props": {
+        "blockClass": "trabaja-right-col",
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "rich-text#trabaja-form-title",
+        "form#trabaja"
+      ]
+    },
+    "rich-text#trabaja-form-title": {
+      "props": {
+        "text": "### TRABAJA CON NOSOTROS",
+        "blockClass": "trabaja-form-title"
+      }
+    },
+    "form#trabaja": {
+      "props": {
+        "entity": "TR",
+        "schema": "Trabaja con Nosotros",
+        "blockClass": "formulario-servicio-atencion"
+      },
+      "children": [
+        "form-input.text#email-trabaja",
+        "form-input.text#name-trabaja",
+        "form-input.text#apellido-trabaja",
+        "form-input.text#telefono-trabaja",
+        "form-input.dropdown#area-trabaja",
+        "flex-layout.row#trabaja-upload-content",
+        "form-input.textarea#motivacion-trabaja",
+        "form-submit#trabaja"
+      ],
+      "blocks": [
+        "form-success#trabaja"
+      ]
+    },
+    "form-success#trabaja": {
+      "children": [
+        "rich-text#successSubmit-trabaja"
+      ]
+    },
+    "rich-text#successSubmit-trabaja": {
+      "props": {
+        "text": "Tu solicitud se envio con exito!",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "blockClass": "submit-form"
+      }
+    },
+    "form-input.text#email-trabaja": {
+        "props": {
+          "pointer": "#/properties/email",
+          "blockClass": "input"
+        }
+      },
+    "form-input.text#name-trabaja": {
+      "props": {
+        "pointer": "#/properties/nombre",
+        "blockClass": "input"
+      }
+    },
+    "form-input.text#apellido-trabaja": {
+        "props": {
+          "pointer": "#/properties/apellido",
+          "blockClass": "input"
+        }
+      },
+    "form-input.text#telefono-trabaja": {
+      "props": {
+        "pointer": "#/properties/telefono",
+        "blockClass": "input"
+      }
+    },
+    "form-input.dropdown#area-trabaja": {
+        "props": {
+          "pointer": "#/properties/area",
+          "blockClass": "input"
+        }
+      },
+    "form-input.textarea#motivacion-trabaja": {
+      "props": {
+        "pointer": "#/properties/motivacion",
+        "blockClass": "input"
+      }
+    },
+    "flex-layout.row#trabaja-upload-content": {
+      "props": {
+        "paddingTop": 2,
+        "paddingBottom": 10,
+        "blockClass": "trabaja-upload-content"
+      },
+      "children": [
+        "flex-layout.col#trabaja-upload-wrapper"
+      ]
+    },
+    "flex-layout.col#trabaja-upload-wrapper": {
+      "props": {
+        "blockClass": "trabaja-upload-col",
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "rich-text#trabaja-form-cv",
+        "form-input.upload#curriculum-trabaja"
+      ]
+    },
+    "rich-text#trabaja-form-cv": {
+      "props": {
+        "text": " CURRICULUM VITAE (FORMATO PDF)",
+        "blockClass": "trabaja-form-cv"
+      }
+    },
+    "form-input.upload#curriculum-trabaja": {
+      "props": {
+        "pointer": "#/properties/curriculum",
+        "blockClass": "input"
+      }
+    },
+    "form-submit#trabaja": {
+      "props": {
+        "label": "Enviar",
+        "blockClass": "boton-enviar"
+      }
+    },
+  
+    /* MOBILE*/
+    "responsive-layout.mobile#trabaja": {
+      "children": [
+        "flex-layout.row#trabaja-content"
+      ]
+    }
+  }

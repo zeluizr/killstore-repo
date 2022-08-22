@@ -1,0 +1,20 @@
+{
+  "vendor": "killstorecl",
+  "name": "product-stock",
+  "version": "0.0.6",
+  "title": "Product Stock",
+  "description": "Product Stock",
+  "defaultLocale": "es-AR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.inventory-graphql": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

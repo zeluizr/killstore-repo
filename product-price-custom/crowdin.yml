@@ -1,0 +1,4 @@
+files:
+ - source: /messages/en.json
+   translation: /messages/%locale%.json
+

@@ -1,0 +1,299 @@
+{
+  "flex-layout.row#descripcion-producto":{
+        "children":[
+          "flex-layout.col#descripcion-producto"
+        ],
+        "props":{
+          "blockClass": "especificaciones-row"
+        }
+      },
+      "flex-layout.col#descripcion-producto":{
+        "children":[
+          "product-specification-group"
+        ],
+        "props":{
+          "blockClass": "especificaciones-col"
+        }
+      },
+      "product-specification-group": {
+        "children": [
+        "flex-layout.row#group-name",        
+          "product-specification"
+        ],
+        "props": {
+          "blockClass": "specifications-product-group",
+          "filter":{
+            "specificationGroups":["que incluye","que no incluye","Descripción", "LongDesc"],
+            "type":"hide"
+        }
+        }
+      },
+      "flex-layout.row#group-name":{
+        "children":[
+            "product-specification-text#groupName"
+        ],
+        "props": {
+            "blockClass": "row-specifications-product-group"
+          }
+      },
+      "product-specification-text#groupName":{
+        "props": {
+            "message": "{groupName}",
+            "blockClass": "specifications-groupName"
+          }
+      },
+      "product-specification": {
+        "children": [
+          "flex-layout.row#spec-item"
+        ],
+        "props": {
+          "blockClass": "specifications-product"
+        }
+      },
+      "flex-layout.row#spec-item": {
+        "props": {
+          "blockClass": "productSpecification"
+        },
+        "children": [
+          "flex-layout.col#spec-name", 
+          "flex-layout.col#spec-value"
+        ]
+      },
+      "flex-layout.col#spec-name": {
+        "props": {
+          "blockClass": "productSpecificationName"
+        },
+        "children": [
+          "product-specification-text#specification"
+        ]
+      },
+      "flex-layout.col#spec-value": {
+        "props": {
+          "blockClass": "productSpecificationValue"
+        },
+        "children": [
+          "product-specification-values"
+        ]
+      },
+      "product-specification-values": {
+        "children": [
+          "product-specification-text#value"
+        ],
+        "props":{
+          "blockClass": "specification-value"
+        }
+        
+      },
+      "product-specification-text#specification": {
+        "props": {
+          "message": " {specificationName}",
+          "blockClass": "specification-text-specification"
+        }
+      },
+      "product-specification-text#value": {
+        "props": {
+          "message": "{specificationValue}",
+          "blockClass": "specification-text-value"
+        }
+      },
+      //especifacion que incluye
+      "flex-layout.row#queincluye-producto":{
+        "children":[
+          "flex-layout.col#queincluye-producto"
+        ],
+        "props":{
+          "blockClass": "especificaciones-row"
+        }
+      },
+      "flex-layout.col#queincluye-producto":{
+        "children":[
+          "product-specification-group#queincluye"
+        ],
+        "props":{
+          "blockClass": "queincluye-col"
+        }
+      },
+      "product-specification-group#queincluye": {
+        "children": [
+             
+         "product-specification#queincluye"
+        ],
+        "props": {
+          "blockClass": "specifications-product-group",
+          "filter":{
+              "specificationGroups":["que incluye","que no incluye"],
+              "type":"show"
+          }
+        }
+      },
+      "flex-layout.row#group-queincluye":{
+         "children":[
+            "product-specification-text#queincluyeName"
+         ],
+         "props": {
+            "blockClass": "row-specifications-queincluye-group"
+          }
+      },
+      "product-specification-text#queincluyeName":{
+        "props": {
+            "message": "{groupName}",
+            "blockClass": "specifications-queincluyeName"
+          }
+      },
+      "product-specification#queincluye": {
+        "children": [
+          "flex-layout.col#spec-item-incluye"
+        ],
+        "props": {
+          "blockClass": "specifications-product"
+        }
+      },
+      "flex-layout.col#spec-item-incluye": {
+        "props": {
+          "blockClass": "specification-incluye",
+          "preventVerticalStretch": true
+        },
+        "children": [
+          "flex-layout.col#spec-name-incluye", 
+          "flex-layout.col#spec-value-incluye"
+        ]
+      },
+      "flex-layout.col#spec-name-incluye": {
+        "props": {
+          "blockClass": "productSpecificationNameIncluye"
+        },
+        "children": [
+          "product-specification-text#specificationIncluye"
+        ]
+      },
+      "flex-layout.col#spec-value-incluye": {
+        "props": {
+          "blockClass": "productSpecificationValueIncluye"
+        },
+        "children": [
+          "product-specification-values#incluye"
+        ]
+      },
+      "product-specification-values#incluye": {
+        "children": [
+          "product-specification-text#valueIncluye"
+        ],
+        "props":{
+          "blockClass": "specification-value"
+        }
+        
+      },
+      "product-specification-text#specificationIncluye": {
+        "props": {
+          "message": " {specificationName}",
+          "blockClass": "specification-text-specification"
+        }
+      },
+      "product-specification-text#valueIncluye": {
+        "props": {
+          "message": "{specificationValue}",
+          "blockClass": "specification-text-value"
+        }
+      },
+
+      // especifiaciones 'Descripcion'
+
+      "flex-layout.row#longdescription-producto":{
+        "children":[
+          "flex-layout.col#longdescription-producto"
+        ],
+        "props":{
+          "blockClass": "especificaciones-row"
+        }
+      },
+      "flex-layout.col#longdescription-producto":{
+        "children":[
+          "product-specification-group#longdescription"
+        ],
+        "props":{
+          "blockClass": "longdescription-col"
+        }
+      },
+      "product-specification-group#longdescription": {
+        "children": [
+             
+         "product-specification#longdescription"
+        ],
+        "props": {
+          "blockClass": "specifications-product-group",
+          "filter":{
+              "specificationGroups":["LongDesc"],
+              "type":"show"
+          }
+        }
+      },
+      "flex-layout.row#group-longdescription":{
+         "children":[
+            "product-specification-text#longdescriptionName"
+         ],
+         "props": {
+            "blockClass": "row-specifications-longdescription-group"
+          }
+      },
+      "product-specification-text#longdescriptionName":{
+        "props": {
+            "message": "{groupName}",
+            "blockClass": "specifications-longdescriptionName"
+          }
+      },
+      "product-specification#longdescription": {
+        "children": [
+          "flex-layout.col#spec-item-longdescription"
+        ],
+        "props": {
+          "blockClass": "specifications-product"
+        }
+      },
+      "flex-layout.col#spec-item-longdescription": {
+        "props": {
+          "blockClass": "specification-longdescription"
+        },
+        "children": [
+          "flex-layout.col#spec-name-longdescription", 
+          "flex-layout.col#spec-value-longdescription"
+        ]
+      },
+      "flex-layout.col#spec-name-longdescription": {
+        "props": {
+          "blockClass": "productSpecificationNamelongdescription"
+        },
+        "children": [
+          "product-specification-text#specificationlongdescription"
+        ]
+      },
+      "flex-layout.col#spec-value-longdescription": {
+        "props": {
+          "blockClass": "productSpecificationValuelongdescription"
+        },
+        "children": [
+          "product-specification-values#longdescription"
+        ]
+      },
+      "product-specification-values#longdescription": {
+        "children": [
+          "product-specification-text#valuelongdescription"
+        ],
+        "props":{
+          "blockClass": "specification-value"
+        }
+        
+      },
+      "product-specification-text#specificationlongdescription": {
+        "props": {
+          "message": "",
+          "blockClass": "specification-text-specification"
+        }
+      },
+      "product-specification-text#valuelongdescription": {
+        "props": {
+          "message": "{specificationValue}",
+          "blockClass": "specification-text-value"
+        }
+      }
+
+}

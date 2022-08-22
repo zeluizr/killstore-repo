@@ -1,0 +1,9 @@
+query productFicha($slug: String) {
+  product(slug: $slug) {
+    items {
+      referenceId {
+        Value
+      }
+    }
+  }
+}

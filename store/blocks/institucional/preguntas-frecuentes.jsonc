@@ -1,0 +1,42 @@
+{
+    "store.custom#preguntas-frecuentes": {
+        "blocks": [
+            "flex-layout.row#institucional-preguntas-frecuentes"
+        ]
+    },
+    "flex-layout.row#institucional-preguntas-frecuentes":{
+        "children":[
+            "flex-layout.col#institucional-preguntas-frecuentes"
+        ],
+        "props":{
+            "blockClass": "row-institucional",
+            "horizontalAlign": "left"
+        }
+    },
+    "flex-layout.col#institucional-preguntas-frecuentes":{
+        "children":[
+            "rich-text#preguntas-frecuentes",
+            "rich-text#preguntas-frecuentes2"
+        ],
+        "props":{
+            "blockClass": "col-institucional",
+            "horizontalAlign": "left"
+        }
+    },
+    "rich-text#preguntas-frecuentes": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "## **Preguntas Frecuentes**",
+            "blockClass": "institucional-titulo"
+        }
+    },
+    "rich-text#preguntas-frecuentes2": {
+        "props": {
+            "textAlignment": "left",
+            "textPosition": "Left",
+            "text": "### **Compras con retiro en tienda:** \n\n **1. ¿Cuándo puedo retirar mi pedido después de realizar mi compra?** \n\n Podrá retirar sus productos una vez que se modifique el estado de su pedido a “Retiro en tienda” el cual se le notificará vía email. \n\n **2. ¿Puede retirar un tercero por mi?** \n\n Claro, solo debe enviar un correo al [postventa@killstore.cl](mailto:postventa@killstore.cl) mencionando nombre y rut del mismo, y podrá retirar presentando su cédula de identidad. \n\n ### **Compras con despachos a domicilio:** \n\n **1. ¿Por qué medio puedo solicitar envío a mi domicilio?** \n\n  Si estás en Santiago puedes elegir entre Chilexpress, Starken y envío directo de Killstore. Si eres de región puede elegir entre Starken y Chilexpress. \n\n **2. ¿Qué valor tiene el envío?** \n\n El sistema calculará el valor del envío automáticamente según peso volumétrico del producto, distancia de entrega, valor del producto y Courier seleccionado. \n\n **3. ¿Tengo límites según peso o tamaño para envíos por Courier?** \n\n Si, si tu producto excede los 2mts de tamaño solo se puede enviar por Starken o envío Killstore carga grande. \n\n  **4. ¿En que momento debo pagar el costo de envío?** \n\n Puedes seleccionar si deseas pagar tu envío en el proceso de compra o pagarlo al momento de retirar en la sucursal. Con Starken es el único con el que puedes pagar el costo de envío en tu domicilio. \n\n **5. ¿Qué pasa si pido despacho a mi domicilio y no estoy en mi casa?** \n\n Si seleccionó envío por Courier, este intentará entregar en 2 ocasiones, si ambas son fallidas se devolverá al remitente donde se deberá coordinar un nuevo envío. \n\n ### **Compras con despachos a sucursal:** \n\n **1. ¿Cómo selecciono la sucursal a la que deseo que me envíen mi pedido?** \n\n Puedes seleccionar la sucursal en la que desees retirar tu pedido al momento de elegir el Courier durante el proceso de compra \n\n **2. ¿Qué valor tiene el envío?** \n\n El sistema calculará el valor del envío automáticamente según peso volumétrico del producto, distancia de entrega, valor del producto y Courier seleccionado. \n\n **3. ¿Tengo límites según peso o tamaño para envíos por Courier?** \n\n  Si, si tu producto excede los 2mts de tamaño solo se puede enviar por Starken. \n\n **4. ¿En que momento debo pagar el costo de envío?** \n\n  Puedes seleccionar si deseas pagar tu envío en el proceso de compra o pagarlo al momento de retirar en la sucursal. \n\n ### **Medios de pago:** \n\n **1. ¿Accedo algún descuento según medio de pago?** \n\n Claro, muchos de nuestros productos tienen un descuento aplicado según su medio de pago. \n\n **2. ¿Como puedo acceder a las 12 cuotas precios sin interés?** \n\n Puedes acceder a las 12 cuotas sin interés pagando a través de MercadoPago. \n\n **3. ¿Cómo obtengo los datos de transferencia?** \n\n Debes seleccionar el medio de pago Transferencia Bancaria para conocer los datos, estos datos solo se despliegan una vez confirmado el pedido. \n\n **4. ¿Puedo pagar combinando medios de pago?** \n\n Claro, para ello deberás pedir asistencia a un vendedor a través de correo, teléfono o chat online. \n\n **5. ¿Cómo puedo pagar si mi banco tiene límite diario?** \n\n  Puede hacer una transferencia inicial en el que el pedido pasará al estado “Pago parcial” y se reservará su producto para que realice la segunda transferencia. \n\n ### **Sobre stock:** \n\n **1. ¿Que pasa si compro un producto que no tiene stock?** \n\n  Es muy difícil que compres un producto que no tenga stock, pero en el caso que llegase a ocurrir, te llegará un e-mail informándote que no hay disponibilidad del producto y ofreciendo una solución. \n\n **2. ¿El stock de la web es el mismo de la tienda?** \n\n Si, el stock de la web está conectado con la bodega central de la tienda. \n\n **3. ¿Como puedo comprar un producto con entrega en 24/72hrs?** \n\n  Primero debes confirmar stock, ya que debemos confirmar la disponibilidad con nuestros proveedores, una vez asegurado el stock en proveedor le notificaremos para que pueda realizar su compra. \n\n **4. ¿Cómo me puedo enterar de la llegada de un producto que está sin stock?** \n\n En la publicación del producto existe un apartado donde puedes solicitar notificación de la llegada del producto. \n\n ### **Facturación:** \n\n **1. ¿Como puedo obtener boleta o factura por mi compra?** \n\n En el proceso de compra existe un apartado si deseas factura, que al clickear sobre el se desplegarán los datos de la empresa, Razón social, Rut, Giro, dirección. Si no solicita factura se realizará una boleta por su compra. \n\n **2. ¿Debo dar mis datos de contacto si estoy comprando como empresa?** \n\n Si, es necesario que deje sus datos de contacto para comunicarnos en caso de ser necesario. \n\n ### **Chilecompra:** \n\n **La empresa está en Mercado Público ?** \n\n Si, la empresa está inscrita en Mercado Público para procesamiento de OC directa o postulación a licitaciones públicas.Para cotizaciones contactar a [simoncordero@killstore.cl](mailto:simoncordero@killstore.cl) \n\n\n",
+            "blockClass": "institucional"
+        }
+    }
+}

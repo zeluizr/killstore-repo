@@ -1,0 +1,517 @@
+{
+    "store.custom#pre-cyber": {
+        "blocks": [
+            "responsive-layout.desktop#pre-cyber",
+            "responsive-layout.mobile#pre-cyber"
+        ]
+    },
+    "responsive-layout.desktop#pre-cyber": {
+        "children": [
+            "flex-layout.row#institucional-pre-cyber",
+            "flex-layout.row#container-pre-cyber",
+            "flex-layout.row#container-pre-cyber-2",
+            "flex-layout.row#container-pre-cyber-3",
+            "flex-layout.row#container-pre-cyber-4",
+            "flex-layout.row#container-pre-cyber-5",
+            "flex-layout.row#container-pre-cyber-6",
+            "flex-layout.row#container-pre-cyber-7"
+        ]
+    },
+    "flex-layout.row#institucional-pre-cyber": {
+        "children": [
+            "flex-layout.col#institucional-pre-cyber"
+        ],
+        "props": {
+            "blockClass": "row-landing-cyber"
+        }
+    },
+    "flex-layout.col#institucional-pre-cyber": {
+        "children": [
+            "rich-text#titulo-pre-cyber-registro",
+            "form#pre-cyber",
+            "image#pre-cyber-contador",
+            "countdown"
+        ],
+        "props": {
+            "blockClass": "col-landing-cyber"
+        }
+    },
+    "rich-text#titulo-pre-cyber-registro": {
+        "props": {
+            "text": "### CYBER MONDAY \n ### ¿Estás preparad@? \n Regístrate y sé el primero en enterarte de nuestras ofertas",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "blockClass": "titulo-registro-landing"
+        }
+    },
+    "form#pre-cyber": {
+        "props": {
+            "entity": "PC",
+            "schema": "PreCyber"
+        },
+        "blocks": [
+            "form-success#pre-cyber"
+        ],
+        "children": [
+            "flex-layout.row#container-form-pre-cyber"
+        ]
+    },
+    "flex-layout.row#container-form-pre-cyber": {
+        "children": [
+            "form-input.text#email",
+            "form-submit#pre-cyber"
+        ],
+        "props": {
+            "blockClass": "container-form-cyber",
+            "preventHorizontalStretch": true
+        }
+    },
+    "form-success#pre-cyber": {
+        "children": [
+            "rich-text#success-submit"
+        ]
+    },
+    "rich-text#success-submit": {
+        "props": {
+            "text": "## Gracias por inscribirte al Cyber Monday de Killstore!",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "succes-cyber"
+        }
+    },
+    "form-input.text#email": {
+        "props": {
+            "label": "Email",
+            "placeholder": "Email",
+            "pointer": "#/properties/email"
+        }
+    },
+    "form-submit#pre-cyber": {
+        "props": {
+            "label": "Regístrate aquí"
+        }
+    },
+    "image#pre-cyber-contador": {
+        "props": {
+          "src": "/arquivos/precyber-01.gif",
+          "width": "60%",
+          "blockClass": "pre-cyber"
+        }
+    },
+    "countdown":{
+        "props":{
+            "targetDate": "2021-10-4"
+        }
+    },
+    "flex-layout.row#container-pre-cyber": {
+        "children": [
+            "flex-layout.col#container-pre-cyber"
+        ],
+        "props": {
+            "blockClass": "row-container-landing-cyber"
+        }
+    },
+    "flex-layout.col#container-pre-cyber": {
+        "children": [
+            "flex-layout.row#pre-cyber-info-1"
+        ],
+        "props": {
+            "blockClass": "col-container-landing-cyber"
+        }
+    },
+    "flex-layout.row#pre-cyber-info-1": {
+        "children": [
+            "flex-layout.col#pre-cyber-info-1-left",
+            "flex-layout.col#pre-cyber-info-1-right"
+        ],
+        "props": {
+            "blockClass": "row-info-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-1-left": {
+        "children": [
+            "rich-text#pre-cyber-info-1"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "rich-text#pre-cyber-info-1": {
+        "props": {
+            "text": "### ¡Killstorian@s! Pronto se viene el CyberMonday en Chile \n\n que comenzará el 4 de Octubre a las 00:00 hrs y finalizará el día 6 a las 23:59 hrs… Falta poco, ¿verdad? ¡Obvio que el tío Killstore no podía faltar!\n\n Por eso, queremos dejarte algunos detalles y tips para que puedas vivir este evento al máximo.¡Comencemos!. \n\n ### ¿De qué trata el CyberMonday Chile? \n\n Es un evento masivo en el cual podrás encontrar un montón de cosas geniales a precios de oportunidad única. ¡No te lo pierdas!",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "blockClass": "info-pre-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-1-right": {
+        "children": [
+            "image#pre-cyber-info-1"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "image#pre-cyber-info-1": {
+        "props": {
+          "src": "/arquivos/1-de-que-trata-el-cyber.png",
+          "blockClass": "pre-cyber"
+        }
+    },
+    "flex-layout.row#container-pre-cyber-2": {
+        "children": [
+            "flex-layout.col#container-pre-cyber-2"
+        ],
+        "props": {
+            "blockClass": "row-landing-cyber"
+        }
+    },
+    "flex-layout.col#container-pre-cyber-2": {
+        "children": [
+            "flex-layout.row#pre-cyber-info-2"
+        ],
+        "props": {
+            "blockClass": "col-landing-cyber"
+        }
+    },
+    "flex-layout.row#pre-cyber-info-2": {
+        "children": [
+            "flex-layout.col#pre-cyber-info-2-left",
+            "flex-layout.col#pre-cyber-info-2-right"
+        ],
+        "props": {
+            "blockClass": "row-info-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-2-left": {
+        "children": [
+            "image#pre-cyber-info-2"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "rich-text#pre-cyber-info-2": {
+        "props": {
+            "text": "Cada producto en la página web tiene un stock limitado. Por eso te recomendamos que días anteriores vayas viendo los productos que te interesan para así tener en mente lo que quieres. ¡Pero no hay límite de ofertas! Existiendo stock, puedes añadir todo lo que quieras. \n\n También te recomendamos que si esta será tu primera compra con nosotros, vayas creando tu usuario para ir ahorrandote unos minutos \n\n Además teniendo tu cuenta creada, siempre podrás enterarte de nuestras ofertas en tiempo record ¡y ganarle a todos!",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "blockClass": "info-pre-cyber-white"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-2-right": {
+        "children": [
+            "rich-text#pre-cyber-info-2"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "image#pre-cyber-info-2": {
+        "props": {
+          "src": "/arquivos/2-limite-de-ofertas.png",
+          "blockClass": "pre-cyber"
+        }
+    },
+    "flex-layout.row#container-pre-cyber-3": {
+        "children": [
+            "flex-layout.col#container-pre-cyber-3"
+        ],
+        "props": {
+            "blockClass": "row-container-landing-cyber"
+        }
+    },
+    "flex-layout.col#container-pre-cyber-3": {
+        "children": [
+            "flex-layout.row#pre-cyber-info-3"
+        ],
+        "props": {
+            "blockClass": "col-container-landing-cyber"
+        }
+    },
+    "flex-layout.row#pre-cyber-info-3": {
+        "children": [
+            "flex-layout.col#pre-cyber-info-3-left",
+            "flex-layout.col#pre-cyber-info-3-right"
+        ],
+        "props": {
+            "blockClass": "row-info-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-3-left": {
+        "children": [
+            "rich-text#pre-cyber-info-3"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "rich-text#pre-cyber-info-3": {
+        "props": {
+            "text": "### ¿Cómo saber si un producto está disponible para comprar? \n\n Bien, lo que debes hacer es revisar dentro del producto que te interesa, si está habilitado el producto o no: Cuando esté disponible verás el botón de color naranja, y cuando esté agotado este botón desaparecerá.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "blockClass": "info-pre-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-3-right": {
+        "children": [
+            "image#pre-cyber-info-3"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "image#pre-cyber-info-3": {
+        "props": {
+          "src": "/arquivos/3-como-saber-si-un-producto-esta-disponible.png",
+          "blockClass": "pre-cyber"
+        }
+    },
+    "flex-layout.row#container-pre-cyber-4": {
+        "children": [
+            "flex-layout.col#container-pre-cyber-4"
+        ],
+        "props": {
+            "blockClass": "row-landing-cyber"
+        }
+    },
+    "flex-layout.col#container-pre-cyber-4": {
+        "children": [
+            "flex-layout.row#pre-cyber-info-4"
+        ],
+        "props": {
+            "blockClass": "col-landing-cyber"
+        }
+    },
+    "flex-layout.row#pre-cyber-info-4": {
+        "children": [
+            "flex-layout.col#pre-cyber-info-4-left",
+            "flex-layout.col#pre-cyber-info-4-right"
+        ],
+        "props": {
+            "blockClass": "row-info-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-4-left": {
+        "children": [
+            "image#pre-cyber-info-4"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "rich-text#pre-cyber-info-4": {
+        "props": {
+            "text": "### ¿Cuáles son los pasos a seguir luego de haber confirmado el stock? \n\n Si lo que quieres está en stock, agrega todo al carrito de compras, sigue los simples pasos del proceso y al fin tendrás eso que tanto esperabas. Tenemos una gran variedad de métodos de pago y formas de envío.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "blockClass": "info-pre-cyber-white"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-4-right": {
+        "children": [
+            "rich-text#pre-cyber-info-4"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "image#pre-cyber-info-4": {
+        "props": {
+          "src": "/arquivos/4-rasos-a-seguir-luego-de-confirmar-stock.png",
+          "blockClass": "pre-cyber"
+        }
+    },
+    "flex-layout.row#container-pre-cyber-5": {
+        "children": [
+            "flex-layout.col#container-pre-cyber-5"
+        ],
+        "props": {
+            "blockClass": "row-container-landing-cyber"
+        }
+    },
+    "flex-layout.col#container-pre-cyber-5": {
+        "children": [
+            "flex-layout.row#pre-cyber-info-5"
+        ],
+        "props": {
+            "blockClass": "col-container-landing-cyber"
+        }
+    },
+    "flex-layout.row#pre-cyber-info-5": {
+        "children": [
+            "flex-layout.col#pre-cyber-info-5-left",
+            "flex-layout.col#pre-cyber-info-5-right"
+        ],
+        "props": {
+            "blockClass": "row-info-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-5-left": {
+        "children": [
+            "rich-text#pre-cyber-info-5"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "rich-text#pre-cyber-info-5": {
+        "props": {
+            "text": "### Si tengo alguna duda durante el proceso de mi compra, ¿qué hago? \n\n No te preocupes, para eso estaremos 100% activos en el chat online, que puedes encontrar en nuestra web abajo a la izquierda. ¡También te dejamos los horarios! \n\n - Domingo 03 de Octubre: 22:00 a 3:00 am del lunes 04 \n - Lunes 04 de Octubre: 08:00 am a 01:00 am del martes 05 \n - Martes 05 de Octubre: 08:00 am a 01:00 am del miércoles 06 \n - Miércoles 06 de junio: 08:00 am a 00:00",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "blockClass": "info-pre-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-5-right": {
+        "children": [
+            "image#pre-cyber-info-5"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "image#pre-cyber-info-5": {
+        "props": {
+          "src": "/arquivos/5-tengo-dudas-con-mi-compra.png",
+          "blockClass": "pre-cyber"
+        }
+    },
+    "flex-layout.row#container-pre-cyber-6": {
+        "children": [
+            "flex-layout.col#container-pre-cyber-6"
+        ],
+        "props": {
+            "blockClass": "row-landing-cyber"
+        }
+    },
+    "flex-layout.col#container-pre-cyber-6": {
+        "children": [
+            "flex-layout.row#pre-cyber-info-6"
+        ],
+        "props": {
+            "blockClass": "col-landing-cyber"
+        }
+    },
+    "flex-layout.row#pre-cyber-info-6": {
+        "children": [
+            "flex-layout.col#pre-cyber-info-6-left",
+            "flex-layout.col#pre-cyber-info-6-right"
+        ],
+        "props": {
+            "blockClass": "row-info-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-6-left": {
+        "children": [
+            "image#pre-cyber-info-6"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "rich-text#pre-cyber-info-6": {
+        "props": {
+            "text": "### ¿Cuándo llegará mi nuevo juguete? \n\n ¡Tennos paciencia! Son días muy movidos y las fechas pueden variar, pero nuestro compromiso siempre será que tus juguetes lleguen lo antes posible, ¡sanos y salvos a tus manos! Dicho lo anterior, los plazos de entrega serían: \n\n Santiago: Hasta 3 días hábiles \n\n Regiones: Dependiendo de la región, el plazo variaría entre 6 y 8 días hábiles. Recuerda que para regiones dependemos 100% del courier, pero haremos nuestro mejor esfuerzo para despachar tu pedido al día hábil siguiente.",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "blockClass": "info-pre-cyber-white"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-6-right": {
+        "children": [
+            "rich-text#pre-cyber-info-6"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "image#pre-cyber-info-6": {
+        "props": {
+          "src": "/arquivos/6-cuando-llega-mi-juguete.png",
+          "blockClass": "pre-cyber"
+        }
+    },
+    "flex-layout.row#container-pre-cyber-7": {
+        "children": [
+            "flex-layout.col#container-pre-cyber-7"
+        ],
+        "props": {
+            "blockClass": "row-container-landing-cyber"
+        }
+    },
+    "flex-layout.col#container-pre-cyber-7": {
+        "children": [
+            "flex-layout.row#pre-cyber-info-7"
+        ],
+        "props": {
+            "blockClass": "col-container-landing-cyber"
+        }
+    },
+    "flex-layout.row#pre-cyber-info-7": {
+        "children": [
+            "flex-layout.col#pre-cyber-info-7-left",
+            "flex-layout.col#pre-cyber-info-7-right"
+        ],
+        "props": {
+            "blockClass": "row-info-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-7-left": {
+        "children": [
+            "rich-text#pre-cyber-info-7"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "rich-text#pre-cyber-info-7": {
+        "props": {
+            "text": "### ¿Puedo retirar mi producto en tienda? \n\n ¡Sí! Podrás retirar en nuestras sucursales en los siguientes plazos estimados, pero recuerda antes de ir, ¡mejor espera a que nosotros te avisemos! \n\n - Las Condes: Hasta 3 días hábiles \n\n - Viña del Mar: Hasta 7 días en total",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "blockClass": "info-pre-cyber"
+        }
+    },
+    "flex-layout.col#pre-cyber-info-7-right": {
+        "children": [
+            "image#pre-cyber-info-7"
+        ],
+        "props": {
+            "blockClass": "col-info-cyber",
+            "verticalAlign": "middle"
+        }
+    },
+    "image#pre-cyber-info-7": {
+        "props": {
+          "src": "/arquivos/7-retiro-en-tienda.png",
+          "blockClass": "pre-cyber"
+        }
+    },
+    "responsive-layout.mobile#pre-cyber": {
+        "children": [
+            "flex-layout.row#institucional-pre-cyber",
+            "flex-layout.row#container-pre-cyber",
+            "flex-layout.row#container-pre-cyber-2",
+            "flex-layout.row#container-pre-cyber-3",
+            "flex-layout.row#container-pre-cyber-4",
+            "flex-layout.row#container-pre-cyber-5",
+            "flex-layout.row#container-pre-cyber-6",
+            "flex-layout.row#container-pre-cyber-7"
+        ]
+    }
+}

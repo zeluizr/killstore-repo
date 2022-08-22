@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.summarySmallDisclaimer {
+  font-size: 0;
+}
+.summarySmallDisclaimer::after {
+  content: "Costo de envío calculado al finalizar la compra";
+  font-size: 14px;
+}

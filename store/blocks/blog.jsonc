@@ -1,0 +1,79 @@
+{
+  "store.blog-home": {
+    "blocks": [
+      "blog-breadcrumb.wordpress-breadcrumb",
+      "blog-search.wordpress-search",
+      // "rich-text#Titulo-Categoria-blog",
+      // "flex-layout.row#lista-categorias",
+      "blog-all-posts.wordpress-all-posts"
+    ]
+  },
+  "blog-search.wordpress-search": {
+    "props": {
+      "placeholder": "Buscar articulo",
+      "blockClass": "search-wp"
+    }
+  },
+  "rich-text#Titulo-Categoria-blog": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Nuestras categorias",
+      "blockClass": "blog-categorias-titulo"
+    }
+  },
+  "flex-layout.row#lista-categorias": {
+    "props": {
+      "blockClass": "row-categorias-blog"
+    },
+    "children": [
+      "rich-text#Categoria-blog-proyectos",
+      "rich-text#Categoria-blog-news",
+      "rich-text#Categoria-blog-sello",
+      "rich-text#Categoria-blog-tips"
+    ]
+  },
+  "rich-text#Categoria-blog-proyectos": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "[Proyectos](/blog/category/proyectos)",
+      "blockClass": "blog-categorias"
+    }
+  },
+  "rich-text#Categoria-blog-news": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "[News](/blog/category/news)",
+      "blockClass": "blog-categorias"
+    }
+  },
+  "rich-text#Categoria-blog-sello": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "[El sello de...](/blog/category/el-sello-de)",
+      "blockClass": "blog-categorias"
+    }
+  },
+  "rich-text#Categoria-blog-tips": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "[Tips y Tendencias](/blog/category/tips-y-tendencias)",
+      "blockClass": "blog-categorias"
+    }
+  },
+  "blog-all-posts.wordpress-all-posts": {
+    "props": {
+      "postsPerPage": 4
+    }
+  },
+  "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+    "props": {
+      "title": "Ultimos Posteos",
+      "numberOfPosts": 4
+    }
+  }
+}

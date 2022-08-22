@@ -1,0 +1,16 @@
+.formSubmitButton .vtex-button:hover {
+    border-color: #ff511d;
+}
+
+.formSubmitButton :global(.vtex-button__label) {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: 'Gotham Regular';
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 767px) {
+    .formSubmitContainer {
+        margin: auto;
+    }
+}

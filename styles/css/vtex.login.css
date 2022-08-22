@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.label {
+  color: #5f5f5f;
+  display: flex;
+  font-size: 14px;
+  text-transform: none;
+  font-family: "Gotham Regular";
+}
+
+.icon-favoritos {
+  color: #ff511d;
+  width: 40px;
+  height: 40px;
+}
+
+.profileIcon--login-header {
+  color: #ff511d;
+  width: 20px;
+  height: 20px;
+}
+
+.buttonSocial {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.oauthLabel {
+  color: #b2b1b1;
+  text-transform: initial;
+  font-size: 0.925rem;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button) {
+  background: #ff511d;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: initial;
+}
+
+.accessCodeOptionBtn :global(.vtex-button) {
+  background: #ff511d;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: initial;
+}
+
+.formTitle {
+  display: none;
+}
+
+.optionsList {
+  width: 310px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.emailPasswordOptionBtn::after {
+  content: "";
+  background: url(/arquivos/spacer-login.png);
+  height: 38px;
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .buttonLink {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*
+.container:hover{
+    background: #154284;
+    border-radius: 5px;
+}*/
+
+/* :global(.vtex-store-components-3-x-shippingTableBody
+    > .vtex-store-components-3-x-shippingTableRow:nth-child(2)
+    > .vtex-store-components-3-x-shippingTableCellDeliveryEstimate:nth-child(2)::before) {
+  content: "Icono";
+  background-image: url(https://killstorecl.vteximg.com.br/arquivos/Tienda.png) !important;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 5px 0;
+  height: 50px;
+  width: 50px;
+  color: transparent;
+  padding: 3px;
+} */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--killieKits
+    > .pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex
+    > .vtex-tabs.w-100.h-100.flex.flex-column
+    > .vtex-tabs__nav.flex.flex-row.bb.b--muted-4
+    > button.vtex-tab__button.bt-0.bl-0.br-0.bw1.c-on-muted.b--emphasis.fw5.vtex-tab__button--active.b--solid.v-mid.relative.h-regular.ph6.t-body.bg-transparent.outline-0) {
+  border-bottom: 3px solid #ff511d;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #040404;
+}
+
+:global(.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--killieKits.items-stretch.w-100) {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* estilos slider funcionalidad */
+:global(.sc-bdvvtL.cNNJIt.rec.rec-arrow.rec.rec-arrow-left) {
+  position: absolute;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+:global(.sc-bdvvtL.cNNJIt.rec.rec-arrow.rec.rec-arrow-right) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+:global(.sc-bdvvtL.jRFJkP.rec.rec-arrow.rec.rec-arrow-right) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: #040404;
+}
+
+:global(.sc-bdvvtL.jRFJkP.rec.rec-arrow.rec.rec-arrow-right):hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+:global(.sc-bdvvtL.jRFJkP.rec.rec-arrow.rec.rec-arrow-left) {
+  position: absolute;
+  z-index: 3;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: #040404;
+}
+
+:global(.sc-jRQBWg.qoLPS.rec.rec-carousel-wrapper) {
+  width: 100%;
+  margin: auto;
+}
+
+:global(.sc-eCImPb.jMNKZk.rec.rec-carousel) {
+  margin-top: 2rem;
+}
+
+:global(.sc-bdvvtL.jRFJkP.rec.rec-arrow.rec.rec-arrow-left):hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+:global(.cNNJIt:disabled) {
+  font-size: 0px;
+  cursor: default !important;
+}
+
+:global(.sc-hKwDye.jZlXPY.rec.rec-slider) {
+  margin-left: 15px;
+}
+
+:global(.sc-gKclnd.lcUbOd.rec.rec-dot.rec.rec-dot_active) {
+  background-color: rgb(0 0 0 / 88%);
+  box-shadow: none !important;
+  border: solid 1px #ff511d;
+}
+
+:global(.sc-gKclnd.eaptOe.rec.rec-dot) {
+  background-color: #ff511d;
+  box-shadow: none !important;
+  border: solid 1px #ff511d;
+}
+
+:global(.vtex-store-components-3-x-productDescriptionText--descripcion) ul {
+  padding: 0 1.1rem;
+}
+
+/*imagenes modal*/
+
+:global(.vtex-modal-layout-0-x-paper--image-modal)
+  :global(.vtex-store-components-3-x-carouselGaleryThumbs--image-modal)
+  :global(.swiper-wrapper) {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start;
+  height: auto;
+}
+
+/*Redes sociales mobile*/
+:global(.vtex-flex-layout-0-x-flexRowContent--responsive-mobile)
+  :global(.killstorecl-killstorecl-componentes-0-x-ContainerRedes) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--responsive-mobile)
+    :global(.killstorecl-killstorecl-componentes-0-x-ContainerRedes) {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    right: 96%;
+    z-index: 2;
+    width: auto;
+    width: 30px;
+    display: block;
+    height: 30px;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-price-list-shelf
+    > .vtex-flex-layout-0-x-stretchChildrenWidth
+    > .killstorecl-product-price-custom-1-x-listPrice) {
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: 600;
+}

@@ -1,0 +1,149 @@
+{
+  // "condition#custom-pdp": {
+  //   "props": {
+  //     "conditions": [
+  //       {
+  //         "subject": "brandId",
+  //         "verb": "is",
+  //         "object": "58"
+  //       }
+  //     ],
+  //     "match": "any"
+  //   },
+  //   "children": [
+  //     "responsive-layout.desktop#producto-custom",
+  //     "responsive-layout.mobile#producto-custom"
+  //   ]
+  // },
+  // "responsive-layout.desktop#producto-custom": {
+  //   "children": [
+  //     "flex-layout.row#product-breadcrumb",
+  //     "flex-layout.row#nombre-producto",
+  //     "flex-layout.row#reviews-producto",
+  //     "flex-layout.row#main-custom",
+  //     "flex-layout.row#killieKits",
+  //     "shelf.relatedProducts#related",
+  //     "tab-layout#product",
+  //     "shelf.relatedProducts#similarProducts",
+  //     "flex-layout.row#product-reviews"
+  //   ],
+  //   "props": {
+  //     "blockClass": "responsive-desktop"
+  //   }
+  // },
+  // "flex-layout.row#main-custom": {
+  //   "props": {
+  //     "marginTop": 6,
+  //     "blockClass": "row-principal-producto"
+  //   },
+  //   "children": [
+  //     "flex-layout.col#left",
+  //     "flex-layout.col#center",
+  //     "flex-layout.col#right-custom"
+  //   ]
+  // },
+  // "flex-layout.col#right-custom": {
+  //   "children": [
+  //     "flex-layout.col#savings",
+  //     "flex-layout.row#ahorro",
+  //     "vtex.product-price:product-installments#product",
+  //     "sku-selector",
+  //     "killstorecl-container-condicional#countDown-envio",
+  //     "killstorecl-container-condicional#retiro",
+  //     // "product-availability#availavility-for-send-text",
+  //     /* "rich-text#availavility-for-send-text", */
+  //     "flex-layout.row#buy-button",
+  //     "flex-layout.row#add-to-cart-button",
+  //     "flex-layout.row#quantity-stock",
+  //     "availability-subscriber"
+  //   ],
+  //   "props": {
+  //     "verticalAlign": "top",
+  //     "preventVerticalStretch": false,
+  //     "blockClass": "product-right-col"
+  //   }
+  // },
+  // // "flex-layout.row#mobile-wrapper-dji":{
+  // //   "children":[
+  // //     "responsive-layout.mobile#producto-custom"
+  // //   ],
+  // //   "props": {
+  // //     "blockClass": "responsive-mobile"
+  // //   }
+  // // },
+  // // "responsive-layout.mobile#producto-custom": {
+  // //   "children": [
+  // //     "flex-layout.row#product-breadcrumb",
+  // //     
+  // //     "flex-layout.row#marca-producto",
+  // //     "flex-layout.row#nombre-producto",
+  // //     "flex-layout.row#buttons-buy",
+  // //     "product-identifier.product",
+  // //     "flex-layout.row#reviews-producto",
+  // //     "flex-layout.row#main-mobile-custom",
+  // //     "flex-layout.row#killieKits",
+  // //     "shelf.relatedProducts#related",
+  // //     "tab-layout#product",
+  // //     "shelf.relatedProducts#similarProducts",
+  // //     "flex-layout.row#product-reviews"
+  // //   ],
+  // //   "props": {
+  // //     "blockClass": "responsive-mobile"
+  // //   }
+  // // },
+  // "responsive-layout.mobile#producto-custom":{
+  //   "children":[
+  //     "flex-layout.row#mobile-wrapper-custom"
+  //   ],
+  //   "props": {
+  //     "blockClass": "responsive-mobile"
+  //   }
+  // },
+  // "flex-layout.row#mobile-wrapper-custom": {
+  //   "children": [
+  //     "flex-layout.row#product-breadcrumb",
+  //     "flex-layout.col#left-mobile",
+  //     "flex-layout.row#marca-producto",
+  //     "flex-layout.row#nombre-producto",
+  //     "flex-layout.row#buttons-buy",
+  //     "product-identifier.product",
+  //     "flex-layout.row#reviews-producto",
+  //     "flex-layout.row#main-mobile-custom",
+  //     "shelf.relatedProducts#related",
+  //     "flex-layout.row#killieKits",
+  //     "tab-layout#product",
+  //     "shelf.relatedProducts#similarProducts",
+  //     "flex-layout.row#product-reviews"
+  //   ],
+  //   "props": {
+  //     "blockClass": "responsive-mobile"
+  //   }
+  // },
+  // "flex-layout.row#main-mobile-custom": {
+  //   "props": {
+  //     "marginTop": 6,
+  //     "blockClass": "row-principal-producto"
+  //   },
+  //   "children": [
+  //     "flex-layout.col#right-mobile-dji",
+  //     "flex-layout.col#center-mobile"
+  //   ]
+  // },
+  // "flex-layout.col#right-mobile-dji":{
+  //   "children": [
+  //     "flex-layout.col#savings",
+  //     "vtex.product-price:product-installments#product",
+  //     "product-stock",
+  //     "sku-selector",
+  //     "killstorecl-container-condicional#countDown-envio",
+  //     "killstorecl-container-condicional#retiro",
+  //     "flex-layout.row#stock",
+  //     "availability-subscriber"
+  //   ],
+  //   "props": {
+  //     "verticalAlign": "top",
+  //     "preventVerticalStretch": false,
+  //     "blockClass": "product-right-col"
+  //   }
+  // }
+}

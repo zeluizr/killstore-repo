@@ -1,0 +1,20 @@
+{
+  "store.blog-search-result": {
+    "blocks": [
+      "blog-breadcrumb.wordpress-breadcrumb",
+      "blog-search-list.wordpress-search-list",
+      "search-blog-articles-preview.wordpress",
+      "blog-search-list.wordpress-category-related-posts"
+    ]
+  },
+  "search-blog-articles-preview.wordpress": {
+    "props": {
+      "numberOfPosts": 1,
+      "showAuthors": true,
+      "showDates": true,
+      "showCategories": true,
+      "showExcerpts": false,
+      "absoluteLinks": false
+    }
+  }
+}

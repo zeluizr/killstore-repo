@@ -1,0 +1,86 @@
+.vtex-omnishipping-1-x-pickupPointChange {
+  display: none !important;
+}
+
+.cart-template {
+  min-height: 1024px !important;
+}
+
+#payment-group-promissoryPaymentGroup .payment-group-item-text {
+  visibility: hidden;
+}
+
+#payment-group-promissoryPaymentGroup .payment-group-item-text::after {
+  content: 'Transferencia o depósito';
+  visibility: visible;
+  position: absolute;
+  top: 11px;
+  left: 43px;
+}
+
+#payment-group-promissoryPaymentGroup .payment-group-item-text::before {
+  visibility: visible;
+}
+
+.client-company-nickname label {
+  font-size: 0px;
+}
+
+.client-company-nickname label::before {
+  font-size: 13px;
+  content: 'Giro de la empresa';
+}
+
+body {
+  padding: 0px !important;
+}
+
+.client-profile-data .accordion-toggle span {
+  display: block;
+  position: relative;
+  font-size: 0;
+  padding: 7px 0 !important;
+}
+
+.client-profile-data .accordion-toggle span::after {
+  content: 'Identificación y Facturación';
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+}
+
+.payment-description {
+  display: block;
+  position: relative;
+  font-size: 0;
+  padding: 7px 0 !important;
+}
+
+.payment-description::after {
+  content: 'Recibirás un mail con nuestros datos para finalizar la compra';
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
+}
+
+#is-corporate-client {
+  display: block;
+  position: relative;
+  font-size: 0;
+  padding: 7px 0 !important;
+}
+
+#is-corporate-client::after {
+  content: 'Necesito factura';
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
+  background-color: rgb(233, 233, 233);
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: black;
+}

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.searchBlockContainer {
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 0;
+}
+
+.latestPostsBlockContainer {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.latestPostsBlockTitle {
+  font-family: "Gotham Regular";
+}
+
+.teaserTitleLink {
+  font-family: "Gotham Regular";
+  color: #000;
+  font-weight: 600;
+  text-decoration: unset;
+  font-size: 24px;
+}
+
+.teaserDate {
+  font-family: "Gotham Regular";
+  font-weight: 400;
+}
+
+.teaserCategoryLink {
+  font-family: "Gotham Regular";
+  text-decoration: unset;
+  color: #ff511d;
+}
+
+::global(.vtex__icon-search) {
+  color: #c90512;
+}
+
+.breadcrumbContainer {
+  max-width: 1280px;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.breadcrumbLink {
+  color: #000;
+  text-decoration: unset;
+}
+
+.breadcrumbHomeLink {
+  color: #000;
+  text-decoration: none;
+  font-family: "Gotham Regular";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.listContainer {
+  font-family: "Gotham Regular";
+  max-width: 1280px !important;
+  margin: auto;
+  padding: 0;
+}
+
+.searchBlockContainer :global(.vtex__icon-search) {
+  color: #000;
+}
+
+.wordpressRelatedProducts :global(.vtex-wordpress-integration-2-x-title) {
+  font-size: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.wordpressRelatedProducts {
+  margin-bottom: 40px;
+}
+
+.wordpressRelatedProducts
+  :global(.vtex-wordpress-integration-2-x-dot--isActive) {
+  background-color: #ff511d;
+}
+
+.wordpressRelatedProducts
+  :global(.vtex-wordpress-integration-2-x-title)::after {
+  content: "Productos Relacionados";
+  font-family: "Gotham Regular";
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  font-size: 22px;
+}
+
+.wordpressRelatedProducts :global(.vtex-wordpress-integration-2-x-slide) {
+  min-width: 300px;
+}
+
+.postFeaturedImageContainer {
+  display: none;
+}
+
+.teaserContainer :global(.vtex-card) {
+  padding-bottom: 10px;
+  min-height: 710px;
+}
+
+.teaserBody {
+  height: 305px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.searchBlockContainer :global(.vtex-input-prefix__group) {
+  width: 30%;
+}
+
+.listContainer :global(.vtex-button) {
+  background: unset;
+  border: unset;
+  color: #000;
+}
+
+.listContainer :global(.vtex-dropdown__arrow) {
+  color: #000;
+}
+
+.listFlexItem {
+  width: 25% !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.teaserImage {
+  max-width: 300px;
+}
+
+.postFlex {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0;
+}
+
+.postContainer {
+  padding: 0;
+}
+
+.postTitle {
+  font-family: "Gotham Bold";
+  text-transform: uppercase;
+  font-size: 30px;
+  width: fit-content;
+}
+
+.postCategoryLink {
+  color: #c90512;
+  text-decoration: unset;
+}
+
+.postMeta {
+  font-size: 12px;
+}
+
+.postFeaturedImage {
+  max-width: 600px;
+}
+
+.is-cropped {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.blocks-gallery-grid {
+  padding: 0;
+  max-width: 1260px;
+  width: 100%;
+  margin: auto;
+}
+
+.blocks-gallery-item {
+  max-width: 420px;
+  display: inline-block;
+}
+
+.postContainer {
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .listFlexItem {
+    width: unset !important;
+  }
+
+  .searchBlockContainer :global(.vtex-input-prefix__group) {
+    width: 70%;
+  }
+
+  .searchBlockContainer--search-wp {
+    width: 95%;
+  }
+
+  .postFeaturedImage {
+    max-width: 360px;
+  }
+
+  .breadcrumbContainer {
+    padding-left: 10px;
+  }
+
+  .postContainer {
+    padding: 0;
+    width: 95%;
+    margin: auto;
+  }
+}

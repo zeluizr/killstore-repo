@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.container{
+  text-align: left;
+  margin-bottom: 1rem;
+  border-bottom: solid 2px #eaeaea;
+  display: none;
+}
+
+.title{
+  font-family: "Gotham Regular";
+}
+
+.list{
+  padding: 0;
+}
+
+.item{
+  font-family: "Gotham Light";
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px;
+  height: 20px;
+}
+
+.value{
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  display: block;
+}
+
+.valueConStock{
+  background: url("/arquivos/checked.png") center no-repeat;
+  background-size: contain;
+}
+
+.valueSinStock{
+  background: url("/arquivos/cancel.png") center no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}

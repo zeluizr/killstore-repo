@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.listContainer {
+  border-bottom: 2px solid #eaeaea;
+  justify-content: flex-start;
+}
+
+.listItem :global(.vtex-button__label) {
+  color: black;
+  font-size: 15px;
+  position: relative;
+  top: 6px;
+}
+
+.listItem {
+  margin: 0px;
+  padding: 0;
+}
+.container--product-tabs {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.listItemActive :global(.vtex-button) {
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid #ff511d;
+  border-radius: 0px;
+}
+
+.listItem :global(.vtex-button):hover {
+  background-color: transparent;
+  border-bottom: 4px solid #ff511d;
+}
+@media (max-width: 767px) {
+  .listItem :global(.vtex-button__label) {
+    color: black;
+    font-size: 12px;
+    position: relative;
+    top: 6px;
+  }
+  .container--product-tabs {
+    margin-top: 40px;
+  }
+  .listContainer {
+    border-bottom: 2px solid #eaeaea;
+    justify-content: center;
+  }
+}

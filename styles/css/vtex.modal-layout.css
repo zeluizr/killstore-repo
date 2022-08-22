@@ -1,0 +1,43 @@
+.triggerContainer--modal-trigger-flete {
+  width: 90% !important;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.paper--modal-popup-flete {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+
+.backdrop--modal-popup-flete {
+  background: #393939 !important;
+}
+
+/* @media (max-width: 767px) {
+  .triggerContainer--modal-trigger-flete {
+    margin: 20px;
+  }
+} */
+
+/*Modal retiro en tienda*/
+
+.container--modal-popup-retiro .paper--modal-popup-retiro {
+  max-width: 550px;
+  width: 100%;
+  padding: 40px;
+}
+
+/*Modal imagenes*/
+
+.paper--image-modal {
+  max-width: 1000px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.paper--image-modal .headerContainer {
+  border: none;
+}

@@ -1,0 +1,32 @@
+{
+  "store.custom#terminos-y-condiciones": {
+    "path": "/institucional/terminos-y-condiciones"
+  },
+  "store.custom#politicas-devolucion": {
+    "path": "/institucional/politicas-devolucion"
+  },
+  "store.custom#politicas-envio": {
+    "path": "/institucional/politicas-envio"
+  },
+  "store.custom#preguntas-frecuentes": {
+    "path": "/institucional/preguntas-frecuentes"
+  },
+  "store.custom#trabaja-con-nosotros": {
+    "path": "/institucional/trabaja-con-nosotros"
+  },
+  "store.blog-home": {
+    "path": "/blog"
+  },
+  "store.blog-category": {
+    "path": "/blog/category/:categoryslug_id"
+  },
+  "store.blog-post": {
+    "path": "/blog/post/:slug_id"
+  },
+  "store.blog-search-result": {
+    "path": "/blog/search/:term_id"
+  },
+  "store.custom#pre-cyber":{
+    "path": "/pre-cyber"
+  }
+}

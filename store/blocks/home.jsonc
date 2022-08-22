@@ -1,0 +1,926 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#desktop-top",
+      "responsive-layout.mobile#mobile-top",
+      "livestreaming",
+      "responsive-layout.desktop#desktop-home",
+      "responsive-layout.mobile#mobile-home"
+    ]
+  },
+  "responsive-layout.desktop#desktop-top": {
+    "children": [
+      "list-context.image-list#home",
+      "killstorecl-custom-container#home-banner"
+    ]
+  },
+  "killstorecl-custom-container#home-banner": {
+    "children": ["list-context.image-list#home-bannerCustom"],
+    "props": {
+      "clase": "slider"
+    }
+  },
+  "list-context.image-list#home-bannerCustom": {
+    "children": ["slider-layout#home-bannerCustom"],
+    "props": {
+      "images": [
+        {
+          "image": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/cbf2ed80-c48d-45a8-bb51-386952b7cb6d___7274f0ed63d82f9bad5f7169163190e8.gif",
+          "mobileImage": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/4ac107db-8bd9-4032-a5ef-1a14514592ea___240645cdeb799abc4871b1b83bbd9a33.gif",
+          "link": {
+            "url": "/pre-cyber"
+          }
+        }
+      ],
+      "height": 900,
+      "blockClass": ["slider-home", "homecustom"]
+    }
+  },
+  "slider-layout#home-bannerCustom": {
+    "props": {
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1
+      },
+      "showPaginationDots": "always",
+      "fullWidth": true,
+      "blockClass": ["slider-home", "homecustom"]
+    }
+  },
+  "responsive-layout.desktop#desktop-home": {
+    "children": [
+      "flex-layout.row#categorias-0",
+      "flex-layout.row#categorias-1",
+      "flex-layout.row#categorias-2",
+      "rich-text#title-shelf-1",
+      "shelf#Recomendados",
+      "flex-layout.row#categorias-1-2",
+      "flex-layout.row#categorias-2-2",
+      "rich-text#title-shelf-2",
+      "shelf#Recomendados-2",
+      "flex-layout.row#categorias-1-3",
+      "flex-layout.row#categorias-2-3",
+      "rich-text#title-shelf-3",
+      "shelf#Recomendados-3",
+      "flex-layout.row#categorias-1-4",
+      "flex-layout.row#categorias-2-4",
+      "rich-text#title-shelf-4",
+      "shelf#Recomendados-4",
+      "flex-layout.row#categorias-charlas"
+      /*"flex-layout.row#nosotros"*/
+    ]
+  },
+  "rich-text#title-shelf-1": {
+    "props": {
+      "text": "",
+      "textPosition": "CENTER",
+      "blockClass": "shelf-title"
+    }
+  },
+  "rich-text#title-shelf-2": {
+    "props": {
+      "text": "",
+      "textPosition": "CENTER",
+      "blockClass": "shelf-title"
+    }
+  },
+  "rich-text#title-shelf-3": {
+    "props": {
+      "text": "",
+      "textPosition": "CENTER",
+      "blockClass": "shelf-title"
+    }
+  },
+  "rich-text#title-shelf-4": {
+    "props": {
+      "text": "",
+      "textPosition": "CENTER",
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.row#categorias-0": {
+    "children": ["image#categoria-top-0"],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria-top-0": {
+    "props": {
+      "src": "/arquivos/banner-superior-armado.png",
+      "link": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeGd_ja3T03prAjKTqTob8CWjvyitjmCGAI2HnkQ6xKPqlnZA/viewform"
+      },
+      "blockClass": "imagen-categoria-first"
+    }
+  },
+  "flex-layout.row#categorias-1": {
+    "children": ["image#categoria-top-1", "image#categoria-top-2"],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria-top-1": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/6515da66-1c58-4df1-94a7-0313d219fd00___b8edfe505d213e3889a3ec5d95e9f5b2.png",
+      "link": {
+        "url": "https://www.killstore.cl/godox"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria-top-2": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/cff00967-c614-4561-b41b-c32b3628fc38___cd3a2bc0c9152f7cb2d1783f6a40dc94.png",
+      "link": {
+        "url": "https://www.killstore.cl/canon"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "flex-layout.row#categorias-2": {
+    "children": [
+      "image#categoria1",
+      "image#categoria2",
+      "image#categoria3",
+      "image#categoria4"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria1": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/3d62d136-3a10-47cb-9646-078d02d1b38c___1fe9f64c65e3af39628a79ee2e5e9f31.png",
+      "link": {
+        "url": "https://www.killstore.cl/fujifilm"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria2": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/f280efbb-a9b0-4c63-8926-928b7b785cd4___65622765196372090c1480138887a024.png",
+      "link": {
+        "url": "https://www.killstore.cl/veniwind"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria3": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/207ea74b-5e28-4870-afb3-e9656ec16e39___f6ab030ba70d40e9df9b572748ac400d.png",
+      "link": {
+        "url": "https://www.killstore.cl/kit-de-iluminacion-continua-doble-ipalux-con-ampolletas--softboxs/p"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria4": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/330d85c5-9b5a-4bdd-972f-889c22d3eec8___9770da960b4b31bc4e539df1e84a82e9.png",
+      "link": {
+        "url": "https://www.killstore.cl/yongnuo"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "flex-layout.row#categorias-1-2": {
+    "children": ["image#categoria-top-1-2", "image#categoria-top-2-2"],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria-top-1-2": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/b143a59d-1ca9-4c9c-bbb1-fe3a03ae9505___f2fe34d5b3cba035c4e98ea77487377a.png",
+      "link": {
+        "url": "https://www.killstore.cl/dji"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria-top-2-2": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/53ae2e4e-6d80-4442-847f-ecb9b7df59d9___4067264820d315d7e624b34551057c19.png",
+      "link": {
+        "url": "https://www.killstore.cl/tamron"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "flex-layout.row#categorias-2-2": {
+    "children": [
+      "image#categoria1-2",
+      "image#categoria2-2",
+      "image#categoria3-2",
+      "image#categoria4-2"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria1-2": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/51115cc2-50ed-41c0-b875-4225bc77c4f8___452cfe7ae949fbf282bdfeffbc3af37f.png",
+      "link": {
+        "url": "https://www.killstore.cl/nanlite"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria2-2": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/88e2e82c-f988-4150-b999-f7be1a0bd4f5___bcff2127a8c7524e2cbcaee14ef45e03.png",
+      "link": {
+        "url": "https://www.killstore.cl/414?map=productClusterIds"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria3-2": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/62556d9b-541e-4463-be1d-6be8722226ed___6a2858568da386cf147ed205a9fabbe9.png",
+      "link": {
+        "url": "https://www.killstore.cl/blackmagic-design"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria4-2": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/0a916eb7-de61-40a5-8316-1c37b0fb6b51___3909ce361856bd519b77a04ab24f0def.png",
+      "link": {
+        "url": "https://www.killstore.cl/feelworld"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "flex-layout.row#categorias-1-3": {
+    "children": ["image#categoria-top-1-3", "image#categoria-top-2-3"],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria-top-1-3": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/a3fb5ddc-614b-4d77-8efa-38b73b8c04e4___7521736ef4674655a2ac50c6c368ddca.png",
+      "link": {
+        "url": "https://www.killstore.cl/elgato"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria-top-2-3": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/2f0dfeae-d8ae-4560-a812-262620e3f18a___94d2cb644806609d9a2c595c22d3e64b.png",
+      "link": {
+        "url": "https://www.killstore.cl/computacion/pcs-armadas"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "flex-layout.row#categorias-2-3": {
+    "children": [
+      "image#categoria1-3",
+      "image#categoria2-3",
+      "image#categoria3-3",
+      "image#categoria4-3"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria1-3": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/8d74736b-e45e-4f35-904b-b4bbeee90508___a04659c91a763da226f03b7cdb882f1d.png",
+      "link": {
+        "url": "https://www.killstore.cl/logitech"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria2-3": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/4a45f57b-c2ea-4299-a8d0-e8ec0c0040c8___448bd946f3da22b85c2020d0f5c38f3f.png",
+      "link": {
+        "url": "https://www.killstore.cl/asus"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria3-3": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/dba3bd6e-5e6e-4886-849d-dae412fbefd6___78317d27d0eeb9b77503576b397692b0.png",
+      "link": {
+        "url": "https://www.killstore.cl/intel"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria4-3": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/0c8aa78d-2f59-4fa8-9c37-b63bc0867f5d___509498e1bb8db0730c64176d11416d3a.png",
+      "link": {
+        "url": "https://www.killstore.cl/amd"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "flex-layout.row#categorias-1-4": {
+    "children": ["image#categoria-top-1-4", "image#categoria-top-2-4"],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria-top-1-4": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/88c9f1d0-235f-4a12-97a8-c986b9c64c2a___7ad97054605dfdc530bd9debcdd48f64.png",
+      "link": {
+        "url": "https://www.killstore.cl/corsair"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria-top-2-4": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/a7813b86-75d8-4d49-9a58-dd43a4326d53___a386f6889ff38134927f7f5ad5dd7c18.png",
+      "link": {
+        "url": "https://www.killstore.cl/nuvem"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "flex-layout.row#categorias-2-4": {
+    "children": [
+      "image#categoria1-4",
+      "image#categoria2-4",
+      "image#categoria3-4",
+      "image#categoria4-4"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria1-4": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/f35cff83-16f8-4ba4-b401-27e242829c6b___564039a5e4e2c9526cca1571e6a0dcd0.png",
+      "link": {
+        "url": "https://www.killstore.cl/sennheiser"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria2-4": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/d905372e-f29d-4fd9-9763-928deedbf120___8351452049cf5d46db8cc94064d0f893.png",
+      "link": {
+        "url": "https://www.killstore.cl/saramonic"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria3-4": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/7e5a0e04-53c5-45ac-8309-f0d0890e6c18___85ac15940d9c8dff70790377876fa974.png",
+      "link": {
+        "url": "https://www.killstore.cl/sistema-lavalier-hollyland-lark-150---dual-inalambrico/p"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria4-4": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/4fba32e8-a8f9-4226-8a63-753c0042d04b___d04478ba82d509a9dd12a9c17002e093.png",
+      "link": {
+        "url": "https://www.killstore.cl/maono"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  /* CICLO DE CHARLAS */
+  "flex-layout.row#categorias-charlas": {
+    "children": [
+      "image#categoria-charlas-1",
+      "image#categoria-charlas-2",
+      "image#categoria-charlas-3",
+      "image#categoria-charlas-4"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias"
+    }
+  },
+  "image#categoria-charlas-1": {
+    "props": {
+      "src": "/arquivos/newbanner-1.png",
+      "link": {
+        "url": "https://us06web.zoom.us/meeting/register/tZUqd-6tpzgiGtYRxsjowo6hytQG4p5Fr5PB"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria-charlas-2": {
+    "props": {
+      "src": "/arquivos/newbanner-2.png",
+      "link": {
+        "url": "https://us06web.zoom.us/meeting/register/tZUqd-6tpzgiGtYRxsjowo6hytQG4p5Fr5PB"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria-charlas-3": {
+    "props": {
+      "src": "/arquivos/newbanner-3.png",
+      "link": {
+        "url": "https://us06web.zoom.us/meeting/register/tZUqd-6tpzgiGtYRxsjowo6hytQG4p5Fr5PB"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  "image#categoria-charlas-4": {
+    "props": {
+      "src": "/arquivos/newbanner-4.png",
+      "link": {
+        "url": "https://us06web.zoom.us/meeting/register/tZUqd-6tpzgiGtYRxsjowo6hytQG4p5Fr5PB"
+      },
+      "blockClass": "imagen-categoria"
+    }
+  },
+  /* Nosotros */
+  "flex-layout.row#nosotros": {
+    "children": ["image#nosotros", "flex-layout.col#texto-nosotros"],
+    "props": {
+      "blockClass": "nosotros",
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#nosotros": {
+    "props": {
+      "src": "https://dummyimage.com/700x380/000/fff",
+      "maxWidth": 610,
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "imagen-nosotros"
+    }
+  },
+  "flex-layout.col#texto-nosotros": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col-nosotros"
+    },
+    "children": ["rich-text#nosotros", "menu-item#Nosotros"]
+  },
+  "rich-text#nosotros": {
+    "props": {
+      "text": "Texto...",
+      "textPosition": "CENTER",
+      "blockClass": "texto-nosotros"
+    }
+  },
+  /* MOBILE */
+  "responsive-layout.mobile#mobile-top": {
+    "children": [
+      "list-context.image-list#home",
+      "killstorecl-custom-container#home-banner"
+    ]
+  },
+  "responsive-layout.mobile#mobile-home": {
+    "children": [
+      "flex-layout.row#categorias-0-mobile",
+      "flex-layout.row#categorias-1-mobile",
+      "flex-layout.row#categorias-bottom-1-mobile",
+      "flex-layout.row#categorias-bottom-2-mobile",
+      "rich-text#title-shelf-1",
+      "shelf#Recomendados",
+      "flex-layout.row#categorias-1-2-mobile",
+      "flex-layout.row#categorias-bottom-1-2-mobile",
+      "flex-layout.row#categorias-bottom-2-2-mobile",
+      "rich-text#title-shelf-2",
+      "shelf#Recomendados-2",
+      "flex-layout.row#categorias-1-3-mobile",
+      "flex-layout.row#categorias-bottom-1-3-mobile",
+      "flex-layout.row#categorias-bottom-2-3-mobile",
+      "rich-text#title-shelf-3",
+      "shelf#Recomendados-3",
+      "flex-layout.row#categorias-1-4-mobile",
+      "flex-layout.row#categorias-bottom-1-4-mobile",
+      "flex-layout.row#categorias-bottom-2-4-mobile",
+      "rich-text#title-shelf-4",
+      "shelf#Recomendados-4",
+      "flex-layout.row#categorias-charlas-mobile-1",
+      "flex-layout.row#categorias-charlas-mobile-2"
+      /*"flex-layout.row#nosotros-mobile"*/
+    ]
+  },
+  "flex-layout.row#categorias-0-mobile": {
+    "children": ["image#categoria-top-0-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-top-mobile"
+    }
+  },
+  "image#categoria-top-0-mobile": {
+    "props": {
+      "src": "/arquivos/banner-superior-armado.png",
+      "link": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeGd_ja3T03prAjKTqTob8CWjvyitjmCGAI2HnkQ6xKPqlnZA/viewform"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "flex-layout.row#categorias-1-mobile": {
+    "children": [
+      "image#categoria-top-1-mobile",
+      "image#categoria-top-2-mobile"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias-top-mobile"
+    }
+  },
+  "image#categoria-top-1-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/6515da66-1c58-4df1-94a7-0313d219fd00___b8edfe505d213e3889a3ec5d95e9f5b2.png",
+      "link": {
+        "url": "https://www.killstore.cl/godox"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria-top-2-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/cff00967-c614-4561-b41b-c32b3628fc38___cd3a2bc0c9152f7cb2d1783f6a40dc94.png",
+      "link": {
+        "url": "https://www.killstore.cl/canon"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "flex-layout.row#categorias-bottom-1-mobile": {
+    "children": ["image#categoria1-mobile", "image#categoria2-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "flex-layout.row#categorias-bottom-2-mobile": {
+    "children": ["image#categoria3-mobile", "image#categoria4-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "image#categoria1-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/7af0007a-ccbe-44f3-92df-5a033011906c___561c2a4e84ec43d89dc3f1a47061c1da.png",
+      "link": {
+        "url": "https://www.killstore.cl/fujifilm"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria2-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/58ee0f85-a020-4d66-915e-cd97059fa513___2872cfc73f60df97cd4579523507d016.png",
+      "link": {
+        "url": "https://www.killstore.cl/veniwind"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria3-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/f281724a-4547-4731-8e1c-00e405d45a44___046800bc76304d99e8e25c77a2c2c814.png",
+      "link": {
+        "url": "https://www.killstore.cl/kit-de-iluminacion-continua-doble-ipalux-con-ampolletas--softboxs/p"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria4-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/90744978-e9c0-4451-a728-7660ece88e6c___dfcedcbd1e59d427e62b042420361f87.png",
+      "link": {
+        "url": "https://www.killstore.cl/yongnuo"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "flex-layout.row#categorias-1-2-mobile": {
+    "children": [
+      "image#categoria-top-1-2-mobile",
+      "image#categoria-top-2-2-mobile"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias-top-mobile"
+    }
+  },
+  "image#categoria-top-1-2-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/b143a59d-1ca9-4c9c-bbb1-fe3a03ae9505___f2fe34d5b3cba035c4e98ea77487377a.png",
+      "link": {
+        "url": "https://www.killstore.cl/dji"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria-top-2-2-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/53ae2e4e-6d80-4442-847f-ecb9b7df59d9___4067264820d315d7e624b34551057c19.png",
+      "link": {
+        "url": "https://www.killstore.cl/tamron"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "flex-layout.row#categorias-bottom-1-2-mobile": {
+    "children": ["image#categoria1-2-mobile", "image#categoria2-2-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "flex-layout.row#categorias-bottom-2-2-mobile": {
+    "children": ["image#categoria3-2-mobile", "image#categoria4-2-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "image#categoria1-2-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/2ea8dd2c-3b5b-4a78-80e3-89185951303f___414c494504f444704438a4a7b63a6624.png",
+      "link": {
+        "url": "https://www.killstore.cl/nanlite"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria2-2-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/7b776a27-0f63-401d-85b1-ebbdc3956777___95941c643bc7eefe8df9a04afe8e271c.png",
+      "link": {
+        "url": "https://www.killstore.cl/414?map=productClusterIds"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria3-2-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/8ea3aeea-6aa6-4732-a514-a7cd57497870___7771abc8da4ff2da5a272613d2cbb5c5.png",
+      "link": {
+        "url": "https://www.killstore.cl/blackmagic-design"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria4-2-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/87454f3c-206d-40b0-98f8-1fc5a9b8e8b7___d29ccb1b192dffa48ce61d83ba5da104.png",
+      "link": {
+        "url": "https://www.killstore.cl/feelworld"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "flex-layout.row#categorias-1-3-mobile": {
+    "children": [
+      "image#categoria-top-1-3-mobile",
+      "image#categoria-top-2-3-mobile"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias-top-mobile"
+    }
+  },
+  "image#categoria-top-1-3-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/a3fb5ddc-614b-4d77-8efa-38b73b8c04e4___7521736ef4674655a2ac50c6c368ddca.png",
+      "link": {
+        "url": "https://www.killstore.cl/elgato"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria-top-2-3-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/2f0dfeae-d8ae-4560-a812-262620e3f18a___94d2cb644806609d9a2c595c22d3e64b.png",
+      "link": {
+        "url": "https://www.killstore.cl/computacion/pcs-armadas"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "flex-layout.row#categorias-bottom-1-3-mobile": {
+    "children": ["image#categoria1-3-mobile", "image#categoria2-3-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "flex-layout.row#categorias-bottom-2-3-mobile": {
+    "children": ["image#categoria3-3-mobile", "image#categoria4-3-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "image#categoria1-3-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/7f0ec422-012c-47b1-922a-9bba74ef0ca5___1edb40c3c2d324601c5327696aa3ae46.png",
+      "link": {
+        "url": "https://www.killstore.cl/logitech"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria2-3-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/ce7b578b-3fd0-4df7-8527-a77b1b6b99d2___38b2874ba190a2d0a963341efffff65f.png",
+      "link": {
+        "url": "https://www.killstore.cl/asus"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria3-3-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/a8ccf36b-adb2-4cfb-85b4-144a13413891___6ed12f71da783dceec359619c37be92a.png",
+      "link": {
+        "url": "https://www.killstore.cl/intel"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria4-3-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/c94629df-351d-4032-8a52-931737d4ae57___95f1fa56c81621a4c1aca830ee9f6efe.png",
+      "link": {
+        "url": "https://www.killstore.cl/amd"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "flex-layout.row#categorias-1-4-mobile": {
+    "children": [
+      "image#categoria-top-1-4-mobile",
+      "image#categoria-top-2-4-mobile"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias-top-mobile"
+    }
+  },
+  "image#categoria-top-1-4-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/88c9f1d0-235f-4a12-97a8-c986b9c64c2a___7ad97054605dfdc530bd9debcdd48f64.png",
+      "link": {
+        "url": "https://www.killstore.cl/corsair"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria-top-2-4-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/a7813b86-75d8-4d49-9a58-dd43a4326d53___a386f6889ff38134927f7f5ad5dd7c18.png",
+      "link": {
+        "url": "https://www.killstore.cl/nuvem"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "flex-layout.row#categorias-bottom-1-4-mobile": {
+    "children": ["image#categoria1-4-mobile", "image#categoria2-4-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "flex-layout.row#categorias-bottom-2-4-mobile": {
+    "children": ["image#categoria3-4-mobile", "image#categoria4-4-mobile"],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "image#categoria1-4-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/99b42ffb-33d1-4e98-8229-dc7425979db6___5caa895c46954d7591db215d45c22817.png",
+      "link": {
+        "url": "https://www.killstore.cl/sennheiser"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria2-4-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/b95e0d65-2a13-43e7-9644-87d04b9e1f5e___b8ec66451a30c53d67b54946d59c5bf5.png",
+      "link": {
+        "url": "https://www.killstore.cl/saramonic"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria3-4-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/a2699d84-05a6-4121-8b2a-19b5c5b37820___c35e7cc525d439e07154f2f596ac074c.png",
+      "link": {
+        "url": "https://www.killstore.cl/sistema-lavalier-hollyland-lark-150---dual-inalambrico/p"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria4-4-mobile": {
+    "props": {
+      "src": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/4e27e220-eb18-469f-8d54-171eb26e4722___83fcce67ded3ff9e8bb53d0b0126b8ca.png",
+      "link": {
+        "url": "https://www.killstore.cl/maono"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  /* Mobile Nosotros */
+  "flex-layout.row#nosotros-mobile": {
+    "children": [
+      "image#nosotros-mobile",
+      "flex-layout.col#texto-nosotros-mobile"
+    ],
+    "props": {
+      "blockClass": "nosotros-mobile",
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#nosotros-mobile": {
+    "props": {
+      "src": "https://dummyimage.com/480x380/000/fff.jpg",
+      "maxWidth": 610,
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "imagen-nosotros-mobile"
+    }
+  },
+  "flex-layout.col#texto-nosotros-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col-nosotros-mobile"
+    },
+    "children": ["rich-text#nosotros-mobile", "menu-item#Nosotros"]
+  },
+  "rich-text#nosotros-mobile": {
+    "props": {
+      "text": "Lorem impsum",
+      "textPosition": "CENTER",
+      "blockClass": "texto-nosotros-mobile"
+    }
+  },
+  /* CICLO DE CHARLAS */
+  "flex-layout.row#categorias-charlas-mobile-1": {
+    "children": [
+      "image#categoria-charlas-1-mobile",
+      "image#categoria-charlas-2-mobile"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "flex-layout.row#categorias-charlas-mobile-2": {
+    "children": [
+      "image#categoria-charlas-3-mobile",
+      "image#categoria-charlas-4-mobile"
+    ],
+    "props": {
+      "blockClass": "imagenes-categorias-mobile"
+    }
+  },
+  "image#categoria-charlas-1-mobile": {
+    "props": {
+      "src": "/arquivos/newbanner-1.png",
+      "link": {
+        "url": "https://us06web.zoom.us/meeting/register/tZUqd-6tpzgiGtYRxsjowo6hytQG4p5Fr5PB"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria-charlas-2-mobile": {
+    "props": {
+      "src": "/arquivos/newbanner-2.png",
+      "link": {
+        "url": "https://us06web.zoom.us/meeting/register/tZUqd-6tpzgiGtYRxsjowo6hytQG4p5Fr5PB"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria-charlas-3-mobile": {
+    "props": {
+      "src": "/arquivos/newbanner-3.png",
+      "link": {
+        "url": "https://us06web.zoom.us/meeting/register/tZUqd-6tpzgiGtYRxsjowo6hytQG4p5Fr5PB"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  },
+  "image#categoria-charlas-4-mobile": {
+    "props": {
+      "src": "/arquivos/newbanner-4.png",
+      "link": {
+        "url": "https://us06web.zoom.us/meeting/register/tZUqd-6tpzgiGtYRxsjowo6hytQG4p5Fr5PB"
+      },
+      "blockClass": "imagen-categoria-mobile"
+    }
+  }
+  /* End Nostros */
+}

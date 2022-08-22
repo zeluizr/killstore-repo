@@ -1,0 +1,59 @@
+{
+  "store.custom#politicas-devolucion": {
+    "blocks": ["flex-layout.row#institucional-politicas-devolucion"]
+  },
+  "flex-layout.row#institucional-politicas-devolucion": {
+    "children": ["flex-layout.col#institucional-politicas-devolucion"],
+    "props": {
+      "blockClass": "row-institucional",
+      "horizontalAlign": "left"
+    }
+  },
+  "flex-layout.col#institucional-politicas-devolucion": {
+    "children": [
+      "rich-text#politicas-devolucion",
+      "rich-text#politicas-devolucion2",
+      "menu-item#devolucion-reversso"
+    ],
+    "props": {
+      "blockClass": "col-institucional",
+      "horizontalAlign": "left"
+    }
+  },
+  "rich-text#politicas-devolucion": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "## **Políticas de Devolución**",
+      "blockClass": "institucional-titulo"
+    }
+  },
+  "rich-text#politicas-devolucion2": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "Left",
+      "text": "**Cambios y devoluciones** \n\n Queremos que estés contento y satisfecho con tu compra, nosotros también somos consumidores y no nos gusta cuando queremos devolver un producto y la empresa para todo pone un tremendo problema, es por eso que queremos ser diferentes, poniéndonos en el lugar de nuestro cliente. \n\n\n **Garantía de fallas de fábrica** \n\n Todas las compras realizadas en nuestro sitio web cuentan con garantía de un mínimo de 90 días por fallas de fábrica y un máximo de 730 días (2 años) Según corresponda el producto. ( (Los técnicos de KillStore realizarán las pruebas necesarias para descartar fallas imputables al usuario), algunos productos tienen periodos de garantías extendidas ofrecidas por el fabricante, en caso de tener algún inconveniente todo el proceso se realiza directamente con nosotros, no te enviamos a otro lugar y nos desentendemos del problema, nos compraste a nosotros y nosotros lo resolvemos junto a ti en el mejor plazo posible. Aplicaremos la garantía legal 3 x 3, significa que podrás elegir entre: a) Reparación del producto, b) Reemplazo del producto, c) Devolución del dinero. \n\n\n **Garantía de satisfacción** \n\n La ley exige a todas las empresas entregar una garantía de cambio para todos los productos comprados online, en KillStore cumplimos totalmente esto por lo que tienes 10 días desde que recibes el paquete para que puedas devolverlo si no estás conforme o seguro de tu compra, debes asegurarte que el producto que quieres devolver esté sin uso, con todos sus accesorios, embalajes, sellos originales y/o regalos promocionales.  \n\n Esta garantía no aplica para productos a pedido, confección a medida, usados o re-acondicionados. \n\n Para solicitar la satisfacción garantizada, bastará con que presentes tu boleta o factura. Si nos diste tu rut al momento de la compra, solo con tu rut podrás realizar el cambio o devolución.",
+      "blockClass": "institucional"
+    }
+  },
+  /*  "flex-layout.row#devolucion-reversso": {
+    "children": ["menu-item#devolucion-reversso"],
+    "props": {
+      "blockClass": ["devolucion-reversso"]
+    }
+  }, */
+  "menu-item#devolucion-reversso": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "type": "external",
+        "href": "https://killstore.reversso.cl",
+        "noFollow": false,
+        "tagTitle": "Solicitar cambio o devolución",
+        "text": "Solicitar cambio o devolución"
+      },
+      "blockClass": ["button-change-return"]
+    }
+  }
+}

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.galleryTitle--layout {
+  text-align: center;
+}
+
+.gallery {
+  width: 100%;
+  margin: 0;
+}
+
+.searchResultContainer {
+  max-width: none;
+  background: #f0f0f0;
+}
+
+.searchResultContainer :global(.vtex-search-result-3-x-container--layout) {
+  max-width: 96rem;
+  margin-bottom: 40px;
+}
+
+.orderBy--layout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.orderByButton {
+  width: 200px;
+  height: 45px;
+  background: #f0f0f0;
+  border: 2px solid #bbbbbb;
+  border-radius: 10px;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.filterPopupTitle {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Lato";
+  margin: 0;
+  text-transform: none;
+}
+
+.caretIcon {
+  width: 16px;
+  height: 16px;
+  color: #bbbbbb;
+}
+
+.orderByText {
+  display: none;
+}
+
+.buttonShowMore {
+  margin: 20px;
+}
+
+.galleryTitle--layout {
+  text-align: center;
+  padding: 8px;
+  color: white;
+  background: black;
+  font-family: "Gotham Regular";
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.categoryItemChildren {
+  font-family: "Gotham Regular";
+  font-size: 14px;
+}
+
+.selectedCategory {
+  font-family: "Gotham Regular";
+}
+
+.categoryItemName {
+  font-family: "Gotham Regular";
+}
+
+.filterTitle {
+  font-family: "Gotham Regular";
+}
+
+.filterItem {
+  font-family: "Gotham Regular";
+  font-size: 14px;
+}
+
+.accordionFilter {
+  display: grid;
+}
+
+.filterAccordionBreadcrumbs {
+  order: 1;
+}
+
+.accordionFilterContainer--marcas {
+  order: 2;
+}
+
+.accordionFilterContainer {
+  order: 3;
+}
+
+@media (max-width: 1024px) {
+  .buttonShowMore--layout {
+    display: none;
+  }
+
+  .galleryItem--normal {
+    flex: 1 1 auto !important;
+    align-self: center;
+    max-width: none !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+  }
+
+  .gallery {
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .orderByButton {
+    justify-content: space-around;
+    border: 2px solid #ff511d;
+    background-color: #ff511d;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .filterPopupTitle {
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: "Lato";
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .caretIcon {
+    width: 14px;
+    height: 14px;
+    color: white;
+  }
+
+  .filterIcon {
+    width: 14px;
+    height: 14px;
+    color: white;
+    display: none;
+  }
+
+  .filterPopupArrowIcon {
+    padding: 0;
+  }
+
+  .filterPopupButton {
+    justify-content: center;
+    border: 2px solid #5f5f5f;
+    background-color: #5f5f5f;
+    width: 200px;
+    height: 43px;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+
+  .filtersWrapperMobile :global(.vtex-search-result-3-x-filterPopupArrowIcon) {
+    display: none;
+  }
+
+  .orderByText {
+    display: flex;
+    color: black;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: "Lato";
+  }
+
+  .galleryTitle--layout {
+    font-size: 30px;
+  }
+}

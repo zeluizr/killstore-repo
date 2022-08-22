@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.slide {
+  padding: 15px;
+  font-family: "Lato";
+}
+
+.title {
+  font-family: "Gotham Regular";
+  color: currentColor;
+  background: transparent;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: initial;
+  display: grid;
+  font-size: 1.75em;
+  justify-content: initial;
+  padding: 10px 10px 0px 20px;
+  border-radius: 8px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  border-bottom: 2px solid #eaeaea;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  width: 13%;
+  padding-top: 5px;
+  border-bottom: solid 4px #ff511d;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+  top: 40px;
+}
+
+.container--shelf-destacados {
+  max-width: 1280px;
+  margin: auto;
+  padding: 15px;
+}
+
+.relatedProducts--shelf-relacionados {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.container--mas-vistos {
+  margin-top: 60px;
+}
+
+.container--vitrina-milk,
+.container--vitrina-mayo,
+.container--vitrina-icecream,
+.container--vitrina-combos {
+  max-width: 905px;
+  margin-right: 20px;
+}
+
+.container--shelf-relacionados {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.dot--isActive {
+  background: #ff511d;
+}
+.title--shelf-destacados {
+  display: none;
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.container--breadcrumb {
+  text-align: left;
+}
+
+.container {
+  text-align: left;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.link:hover {
+  color: #ff511d;
+}
+
+.term--breadcrumb {
+  font-family: "Gotham Regular";
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  font-size: 14px;
+}
+
+.container--breadcrumb {
+  font-family: "Gotham Regular";
+  font-size: 14px;
+}
+
+.container--breadcrumb {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.link {
+  font-family: "Gotham Regular";
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  font-size: 14px;
+}
+
+.homeIcon {
+  width: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.homeLink {
+  align-items: center;
+  display: contents;
+}
+
+.homeLink::before {
+  visibility: visible;
+  content: "Inicio ";
+  padding-right: 2px;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .container--breadcrumb {
+    display: block;
+
+    padding: 0;
+  }
+  .homeLink::before {
+    padding-right: 0;
+    content: "Inicio ";
+    display: contents;
+  }
+  .arrow--breadcrumb {
+    padding: 0;
+    margin-top: 2px;
+    margin-right: 3px;
+  }
+  .term--breadcrumb {
+    display: none;
+  }
+  .termArrow--breadcrumb {
+    display: none;
+  }
+  .link--breadcrumb {
+    display: contents;
+  }
+  .caretIcon--breadcrumb {
+    padding: 0 5px;
+  }
+}

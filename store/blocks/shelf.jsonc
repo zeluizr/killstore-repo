@@ -1,0 +1,272 @@
+{
+  "product-summary.shelf#main": {
+    "children": [
+      /*"vtex.product-highlights@1.x:product-highlights#Medalla-Cyber",*/
+      "add-to-list-btn",
+      "vtex.product-highlights@1.x:product-highlights#Medalla-Preventa",
+      "product-summary-image",
+      "product-summary-name",
+      "flex-layout.row#shelf-reviews-and-rating",
+      "flex-layout.row#product-price-list-shelf",
+      //"product-summary-price",
+      "product-price-transfer",
+      "flex-layout.row#product-installments-shelf",
+      "add-to-cart-button#product"
+    ],
+    "props": {
+      "blockClass": [
+        "product-summary",
+        "product-summary-shelf-selected"
+      ]
+    }
+  },
+  /*  */
+  "flex-layout.row#shelf-reviews-and-rating": {
+    "children": [
+      "product-rating-inline"
+    ],
+    "props": {
+      "blockClass": [
+        "shelf-reviews-and-rating-shelf"
+      ]
+    }
+  },
+  "flex-layout.row#product-price-list-shelf": {
+    "children": [
+      "killstorecl.product-price-custom:product-list-price"
+    ],
+    "props": {
+      "blockClass": [
+        "product-price-list-shelf"
+      ]
+    }
+  },
+  "flex-layout.row#product-installments-shelf": {
+    "children": [
+      "vtex.product-price:product-installments#plp"
+    ],
+    "props": {
+      "blockClass": [
+        "product-installments-shelf"
+      ]
+    }
+  },
+  "vtex.product-price:product-installments#plp": {
+    "props": {
+      "message": "{installmentsNumber} cuotas de {installmentValue}",
+      "blockClass": "product-installments"
+    }
+  },
+  /*  */
+  "product-summary.shelf#blog": {
+    "children": [
+      /*"vtex.product-highlights@1.x:product-highlights#Medalla-Cyber",*/
+      "add-to-list-btn",
+      "vtex.product-highlights@1.x:product-highlights#Medalla-Preventa",
+      "product-summary-image",
+      "product-summary-name",
+      "flex-layout.row#shelf-reviews-and-rating",
+      "flex-layout.row#product-price-list-shelf",
+      //"product-summary-price",
+      "product-price-transfer",
+      "flex-layout.row#product-installments-shelf",
+      "add-to-cart-button#product"
+    ],
+    "props": {
+      "blockClass": "product-summary"
+    }
+  },
+  "product-summary-price": {
+    "props": {
+      "showLabels": false,
+      "showInstallments": false
+    }
+  },
+  "vtex.product-highlights@1.x:product-highlights#Medalla-Cyber": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": [
+          "CYBER 2021"
+        ]
+      }
+    },
+    "children": [
+      "image#flag-cyber" /*,
+      "rich-text#texto-flag-cyber"*/
+    ]
+  },
+  "image#flag-cyber": {
+    "props": {
+      "src": "/arquivos/Medalla-Cyber.png",
+      "maxWidth": 34,
+      "blockClass": "flag"
+    }
+  },
+  "rich-text#texto-flag-cyber": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Cyber \nMonday",
+      "blockClass": "text-flag"
+    }
+  },
+  "vtex.product-highlights@1.x:product-highlights#Medalla-Preventa": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": [
+          "Preventa"
+        ]
+      }
+    },
+    "children": [
+      "image#flag-Preventa"
+    ]
+  },
+  "image#flag-Preventa": {
+    "props": {
+      "src": "/arquivos/Medalla-Preventa.png",
+      "maxWidth": 70,
+      "blockClass": "flag-preventa"
+    }
+  },
+  "shelf#Destacados": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 137,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "none",
+      "simulationBehavour": "default",
+      "productList": {
+        "maxItems": 20,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_ONE",
+        "arrows": false,
+        "titleText": "Destacados"
+      },
+      "blockClass": "shelf-destacados"
+    }
+  },
+  "shelf#Recomendados": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 170,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "none",
+      "simulationBehavour": "default",
+      "productList": {
+        "maxItems": 20,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 2,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": ""
+      },
+      "blockClass": "shelf-destacados"
+    }
+  },
+  "shelf#Recomendados-2": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 176,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "none",
+      "simulationBehavour": "default",
+      "productList": {
+        "maxItems": 20,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 2,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": ""
+      },
+      "blockClass": "shelf-destacados"
+    }
+  },
+  "shelf#Recomendados-3": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 175,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "none",
+      "simulationBehavour": "default",
+      "productList": {
+        "maxItems": 20,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 2,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": ""
+      },
+      "blockClass": "shelf-destacados"
+    }
+  },
+  "shelf#Recomendados-4": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 174,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "none",
+      "simulationBehavour": "default",
+      "productList": {
+        "maxItems": 20,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 2,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "  "
+      },
+      "blockClass": "shelf-destacados"
+    }
+  },
+  "shelf.relatedProducts#related": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "hideUnavailableItems": true,
+      "recommendation": "accessories",
+      "productList": {
+        "titleText": "Accesorios",
+        "maxItems": 20,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": true
+      },
+      "blockClass": "shelf-relacionados"
+    }
+  },
+  "shelf.relatedProducts#similarProducts": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "hideUnavailableItems": true,
+      "recommendation": "similars",
+      "productList": {
+        "titleText": "Similares",
+        "maxItems": 20,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": true
+      },
+      "blockClass": "shelf-relacionados"
+    }
+  }
+}

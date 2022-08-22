@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.menuContainerNav {
+  text-align: center;
+  margin-left: 30px;
+}
+
+.menuContainer {
+  display: inline-flex;
+}
+
+.menuItem--icon-favoritos {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styledLinkIcon {
+  color: #ff511d;
+  height: 18px;
+  margin: 0;
+}
+
+.styledLinkIcon--icon-favoritos {
+  height: 20px;
+}
+
+.menuItem--icon-favoritos :hover {
+  background-color: white;
+}
+
+.menuItem--categorias-nav-header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: #ff511d 2px solid;
+  border-radius: 5px;
+  position: relative;
+}
+
+.styledLinkContainer--icon-favoritos {
+  margin: 0;
+}
+
+.styledLinkContent--footer-general {
+  color: white;
+  font-family: "Gotham Regular";
+  font-size: 12px;
+  justify-content: end;
+}
+
+.styledLinkIcon--footer-general,
+.styledLinkContent:hover {
+  color: #ff511d;
+}
+
+.styledLinkContainer--footer-general {
+  margin-left: 0;
+}
+
+.styledLinkContent--categorias-nav-header,
+.styledLinkContent--categorias-nav-header-mobile {
+  margin: auto;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Gotham Bold";
+}
+
+.submenuWrapper--menu-milk,
+.submenuWrapper--menu-mayo,
+.submenuWrapper--menu-icecream,
+.submenuWrapper--menu-combos {
+  position: fixed;
+  width: 100%;
+  max-height: 515px;
+  padding-top: 0;
+}
+
+.styledLinkContent--categorias-nav-header-mobile {
+  position: inherit;
+}
+
+.styledLinkContainer--categorias-nav-header {
+  height: 100%;
+  align-items: center;
+  display: inline-flex;
+  margin-left: 0;
+}
+
+.menuItem--categorias-nav-header,
+.menuContainer--categorias-nav-header,
+.menuContainerNav--categorias-nav-header {
+  height: 100%;
+}
+
+.styledLinkContent--nav-bar-categorias:hover,
+.styledLinkContent--categorias-nav-header:hover {
+  color: #ff511d;
+}
+
+.styledLinkContent--footer-general:hover {
+  color: #ff511d !important;
+}
+
+.styledLinkContent--boton-nosotros:hover {
+  color: white;
+}
+
+.styledLinkContainer--footer-general-facebook,
+.styledLinkContainer--footer-general-instagram {
+  margin-left: 0;
+}
+
+.menuItem--footer-general-instagram,
+.menuItem--footer-general-facebook {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.styledLinkContent--boton-nosotros {
+  width: fit-content;
+  font-family: "Gotham Regular";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #fff;
+  letter-spacing: 0;
+  background: #ff511d;
+  margin-left: 9%;
+  border-radius: 24px;
+  padding: 0px 45px;
+  height: 48px;
+  margin-top: 60px;
+}
+
+.styledLinkContainer--redes-instagram,
+.styledLinkContainer--redes-facebook,
+.styledLinkContainer--redes-youtube,
+.styledLinkContainer--redes-linkedin {
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+}
+
+.styledLinkContent--redes-facebook,
+.styledLinkContent--redes-instagram,
+.styledLinkContent--redes-youtube,
+.styledLinkContent--redes-linkedin {
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+}
+
+.submenuContainer--submenu-header,
+.submenuContainer--submenu-2-header {
+  display: contents;
+  position: absolute !important;
+}
+
+.submenuWrapper--submenu-header--isOpen {
+  display: block;
+  width: 290px;
+  border-top: solid 4px #ff511d;
+  border-bottom: solid 4px #ff511d;
+  top: 53px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: calc(100vh - 157px);
+  border-right: solid 2px #f5f5f5;
+}
+
+.submenuWrapper--submenu-2-header--isOpen {
+  display: block;
+  width: 605px;
+  border-bottom: solid 4px #f5f5f5;
+  height: calc(100vh - 157px);
+  background: #f5f5f5;
+  position: absolute;
+  top: -4px;
+  left: 290px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  overflow: auto;
+}
+
+.styledLinkContent--submenu-header {
+  color: #535353;
+  font-size: 17px;
+  font-family: "Lato";
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.styledLinkContainer--submenu-header {
+  padding: 4px 0;
+}
+
+.submenu--submenu-2-header {
+  width: 100%;
+  margin: auto;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.styledLinkContent--submenu-header-titulo {
+  font-family: "Lato";
+  font-weight: 700;
+  color: #535353;
+  font-size: 14px;
+}
+
+.styledLinkContainer--submenu-header-item {
+  padding: 3px 0;
+}
+
+.styledLinkContent--submenu-header-item {
+  font-family: "Lato";
+  font-weight: 300;
+  color: #000;
+  font-size: 14px;
+}
+
+.styledLinkContent--new-item::after {
+  display: block;
+  content: "¡Nuevo!";
+  padding: 2px 10px;
+  margin-left: 10px;
+  color: white;
+  border-radius: 15px;
+  font-size: 10px;
+  background-color: #ff511d;
+}
+
+.styledLinkContainer--submenu-header-titulo {
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+.styledLinkContainer--submenu-header-mobile {
+  margin-bottom: 8px;
+}
+
+/* MOBILE */
+.menuItem--categorias-nav-header-mobile
+  .submenuWrapper--submenu-header-mobile--isOpen {
+  display: contents;
+}
+
+.menuItem--categorias-nav-header-mobile .submenu--submenu-header-mobile {
+  display: block;
+}
+
+.styledLinkContent--submenu-header-mobile {
+  color: #535353;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .menuContainerNav {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .menuContainer {
+    width: 100%;
+  }
+}
+
+.submenuContainer--submenu-header-mobile {
+  background: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menuItem--submenu-header-mobile .submenuWrapper--submenu-2-header--isOpen {
+  display: contents;
+}
+
+.menuItem--submenu-header-mobile .submenu--submenu-2-header {
+  margin: 0;
+  width: -webkit-fill-available;
+  background: #fff;
+  display: block;
+}
+
+.styledLinkContent--button-change-return {
+  padding: 0.6rem;
+  border-radius: 0.25rem;
+  background-color: #ff511d;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Lato";
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 2rem;
+}
+
+.styledLinkContent--button-change-return:hover {
+  padding: 0.6rem;
+  border-radius: 0.25rem;
+  background-color: #4c4c4c;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Lato";
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 2rem;
+}

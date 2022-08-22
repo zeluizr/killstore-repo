@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.childrenContainer--drawer-mobile {
+  background: white;
+  padding-bottom: 40px;
+}
+
+.opened--drawer-mobile {
+  background: white;
+}
+
+.menuIcon--drawer-mobile {
+  color: #ff511d;
+}
+
+.closeIconContainer--drawer-mobile {
+  background: white;
+}
+
+.closeIconButton--productsDrawerLive {
+  background-color: #fff;
+}
+
+.childrenContainer--drawer-wishlist {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.openIconContainer {
+  border: 2px #ff511d solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.closeIcon--drawer-mobile {
+  color: #ff511d;
+}
+
+.closeIconButton--drawer-mobile {
+  border: 2px #ff511d solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 20px;
+}
+
+::global(.vtex-store-drawer-0-x-childrenContainer--drawer-mobile
+    > .vtex-menu-2-x-menuContainerNav) {
+  width: -webkit-fill-available;
+  margin-left: 0;
+  display: flex;
+}
+
+::global(.vtex-store-drawer-0-x-childrenContainer--drawer-mobile
+    > .vtex-menu-2-x-menuContainerNav
+    > .vtex-menu-2-x-menuContainer) {
+  width: 100%;
+}

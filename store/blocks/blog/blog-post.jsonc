@@ -1,0 +1,19 @@
+{
+  "store.blog-post": {
+    "children": [
+      "blog-breadcrumb.wordpress-breadcrumb",
+      "blog-search.wordpress-search",
+      "blog-post-details.wordpress-post-details",
+      "blog-post-container.wordpress",
+      "blog-related-products.wordpress-related-products"
+    ]
+  },
+  "blog-post-container.wordpress": {
+    "children": ["blog-post-navigation.wordpress"]
+  },
+  "blog-related-products.wordpress-related-products": {
+    "blocks": [
+      "product-summary.shelf#blog"
+    ]
+  }
+}

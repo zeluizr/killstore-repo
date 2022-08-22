@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.buttonText--product-buy-button {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+.buttonText--product-buy-button-carrito {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 15px;
+  color: #ff511d;
+}
+
+@media (max-width: 767px) {
+  .buttonText--product-buy-button {
+    font-size: 14px;
+    text-transform: none;
+    color: white;
+  }
+
+  .buttonText--product-buy-button-carrito {
+    font-size: 14px;
+    text-transform: none;
+    color: #ff511d;
+  }
+}

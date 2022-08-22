@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.savings--discountInsideContainer {
+  width: 40px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  color: #ff511d;
+  border: 1px solid #ff511d;
+  border-radius: 17px;
+  padding: 4px;
+  font-size: 12px;
+  position: absolute;
+  right: 45%;
+  left: 55%;
+  top: 58%;
+  bottom: 42%;
+  font-weight: bold;
+}
+
+.installments--product-installments {
+  font-size: .8rem;
+  color: #393939;
+  width: 80%;
+  font-family: "Lato";
+}
+
+.installmentsNumber--product-installments--12 {
+  padding-right: 2px;
+  font-weight: 600;
+  color: #393939;
+  font-family: "Lato";
+  font-weight: 900;
+}
+
+.currencyContainer--product-installments {
+  padding-left: 2px;
+  font-weight: 600;
+  color: #393939;
+  font-family: "Lato";
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .savings--discountInsideContainer {
+    left: 45%;
+    right: 55%;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  .installments--product-installments {
+    justify-content: flex-start !important;
+  }
+}

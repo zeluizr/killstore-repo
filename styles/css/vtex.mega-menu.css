@@ -1,0 +1,45 @@
+.menuContainerNav {
+  top: 120px;
+}
+
+.departmentsContainer {
+  position: relative;
+}
+
+.triggerButtonIcon {
+  color: white;
+}
+
+.caretIcon {
+  color: #ff511d;
+}
+
+.triggerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.seeAllLink {
+  text-decoration: none;
+}
+
+.menuContainer {
+  max-height: none;
+}
+
+.menuContainerNav {
+  max-height: 400px;
+  box-shadow: 0px 6px 21px -6px rgb(161 161 161 / 75%);
+  -webkit-box-shadow: 0px 6px 21px -6px rgb(161 161 161 / 75%);
+}
+
+.menuContainer :global(.vtex-mega-menu-0-x-styledLinkText) {
+  font-weight: bold;
+  color: black;
+}
+
+:global(.vtex-mega-menu-0-x-menuContainerVertical)
+:global(.vtex-mega-menu-0-x-styledLink){
+  font-weight: bold;
+  font-size: 18px;
+}

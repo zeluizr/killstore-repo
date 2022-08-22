@@ -1,0 +1,828 @@
+{
+  "store.product": {
+    "children": [
+      "responsive-layout.desktop#producto",
+      "responsive-layout.mobile#producto"
+    ]
+  },
+  // "condition-layout.product": {
+  //   "children": ["condition#custom-pdp", "condition.else"]
+  // },
+  // "condition.else": {
+  //   "children": [
+
+  //   ]
+  // },
+  "responsive-layout.desktop#producto": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#nombre-producto",
+      "flex-layout.row#reviews-producto",
+      "flex-layout.row#main",
+      "flex-layout.row#killieKits",
+      "shelf.relatedProducts#related",
+      "tab-layout#product",
+      "shelf.relatedProducts#similarProducts",
+      "flex-layout.row#product-reviews"
+    ],
+    "props": {
+      "blockClass": "responsive-desktop"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4,
+      "blockClass": "breadcrumb"
+    },
+    "children": ["breadcrumb"]
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": "breadcrumb"
+    }
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": "row-principal-producto"
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#center",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.row#nombre-producto": {
+    "children": ["product-name#product", "killstorecl-redes-sociales#desktop"],
+    "props": {
+      "marginTop": 6,
+      "blockClass": "row-nombre-producto"
+    }
+  },
+  "killstorecl-redes-sociales#desktop": {},
+  "tab-layout#product": {
+    "children": ["tab-list#product", "tab-content#product"],
+    "props": {
+      "blockClass": "product-tabs",
+      "defaultActiveTabId": "product1"
+    }
+  },
+  "tab-list#product": {
+    "children": [
+      "tab-list.item#product1",
+      "tab-list.item#product2",
+      "tab-list.item#product3"
+      // "tab-list.item#product4"
+    ]
+  },
+  "tab-list.item#product1": {
+    "props": {
+      "tabId": "product1",
+      "label": "Descripcion",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#product2": {
+    "props": {
+      "tabId": "product2",
+      "label": "Ficha Tecnica"
+    }
+  },
+  "tab-list.item#product3": {
+    "props": {
+      "tabId": "product3",
+      "label": "¿Qué incluye?"
+    }
+  },
+  "tab-list.item#product4": {
+    "props": {
+      "tabId": "product4",
+      "label": "Documentos asociados"
+    }
+  },
+  "tab-content#product": {
+    "children": [
+      "tab-content.item#product1",
+      "tab-content.item#product2",
+      "tab-content.item#product3",
+      "tab-content.item#product4"
+    ]
+  },
+  "tab-content.item#product1": {
+    "children": [
+      // aca iría el componente de Tomy para levantar additional description
+      // "product-description",
+      // especifiaciones de producto , filtrado por el grupo descripcion
+      "flex-layout.row#longdescription-producto"
+    ],
+    "props": {
+      "tabId": "product1"
+    }
+  },
+  "tab-content.item#product2": {
+    "children": [
+      // especifiaciones de producto
+      "flex-layout.row#descripcion-producto"
+    ],
+    "props": {
+      "tabId": "product2"
+    }
+  },
+  "tab-content.item#product3": {
+    "children": [
+      // especifiaciones de producto , filtrado por el grupo que incluye
+      "flex-layout.row#queincluye-producto"
+    ],
+    "props": {
+      "tabId": "product3"
+    }
+  },
+  "tab-content.item#product4": {
+    "children": [
+      // componente custom para levantar desde nuestro servidor los archivos de la planilla
+    ],
+    "props": {
+      "tabId": "product4"
+    }
+  },
+  "product-specifications": {
+    "props": {
+      "showSpecificationsTab": false,
+      "blockClass": "specifications-product"
+    }
+  },
+  "flex-layout.row#reviews-producto": {
+    "children": ["product-rating-summary"],
+    "props": {
+      "marginTop": 6,
+      "blockClass": "row-reviews-producto"
+    }
+  },
+  "flex-layout.col#left": {
+    "children": ["product-images#product-page"],
+    "props": {
+      "blockClass": "col-left-producto",
+      "width": "40%"
+    }
+  },
+  "product-images#product-page": {
+    "props": {
+      "displayThumbnailsArrows": true,
+      // "zoomMode": "in-place-hover",
+      "zoomMode": "open-modal",
+      "thumbnailsOrientation": "horizontal",
+      "ModalZoom": "modal-layout#product-zoom",
+      "blockClass": "image-producto",
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      }
+    }
+  },
+  "product-images.high-quality-image": {
+    "props": {
+      "zoomMode": "in-place-hover",
+      "zoomFactor": 2,
+      "imageSizes": [700],
+      "blockClass": "product-image-zoom "
+    }
+  },
+  "modal-layout#product-zoom": {
+    "children": [
+      "flex-layout.row#header-modal",
+      // you can put any other block inside the modal,
+      // this is just a normal modal
+      "product-images#modal"
+    ],
+    "props": {
+      "blockClass": "image-modal"
+    }
+  },
+  "flex-layout.row#header-modal": {
+    "children": ["product-name#name-modal", "modal-header"],
+    "props": {
+      "blockClass": "image-modal"
+    }
+  },
+  "product-name#name-modal": {
+    "props": {
+      "blockClass": "name-modal"
+    }
+  },
+
+  "product-images#modal": {
+    "props": {
+      "displayThumbnailsArrows": false,
+      "blockClass": "image-modal",
+      "zoomMode": "in-place-hover",
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      }
+    }
+  },
+  "flex-layout.col#center": {
+    "children": [
+      "flex-layout.row#brand-favoritos",
+      "killstorecl-container-condicional#stock-sucursales",
+      "product-stock",
+      "product-identifier.product",
+      "product-description",
+      "flex-layout.row#garantia"
+    ],
+    "props": {
+      "verticalAlign": "top",
+      "preventVerticalStretch": false,
+      "blockClass": "col-center-producto",
+      "width": "35%"
+    }
+  },
+  "flex-layout.row#garantia": {
+    "children": [
+      "killstorecl-garantia-description",
+      "flex-layout.row#devolucion"
+    ],
+    "props": {
+      "blockClass": "bloque-garantia"
+    }
+  },
+
+  "killstorecl-container-condicional#stock-sucursales": {
+    "props": {
+      "Condition": "killstorecl-stock-sucursales#condicional"
+    },
+    "children": ["killstorecl-stock-sucursales#stock-sucursales"]
+  },
+
+  "killstorecl-stock-sucursales#stock-sucursales": {},
+  "killstorecl-stock-sucursales#condicional": {},
+  "flex-layout.row#devolucion": {
+    "children": ["image#devolucion", "rich-text#texto-devolucion"],
+    "props": {
+      "blockClass": ["devolucion"]
+    }
+  },
+  "image#devolucion": {
+    "props": {
+      "src": "https://killstorecl.vteximg.com.br/arquivos/shipping-nw.svg",
+      "blockClass": "devolucion"
+    }
+  },
+  "rich-text#texto-devolucion": {
+    "props": {
+      "text": "**Devolución gratis:** \n tienes 10 días desde que lo recibes. [Ver condiciones](/institucional/politicas-devolucion?target=_blank)",
+      "blockClass": "devolucion"
+    }
+  },
+
+  "flex-layout.col#right": {
+    "children": [
+      "flex-layout.col#savings",
+      "flex-layout.row#ahorro",
+      "vtex.product-price:product-installments#product",
+      "flex-layout.row#product-discounts",
+      "sku-selector",
+      "killstorecl-container-condicional#countDown-envio",
+      "killstorecl-container-condicional#retiro",
+      // "product-availability#availavility-for-send-text",
+      /* "rich-text#availavility-for-send-text", */
+      "flex-layout.row#buy-button",
+      "flex-layout.row#add-to-cart-button",
+      "flex-layout.row#quantity-stock",
+      "availability-subscriber"
+    ],
+    "props": {
+      "verticalAlign": "top",
+      "preventVerticalStretch": false,
+      "blockClass": "product-right-col"
+    }
+  },
+
+  /// CONTADOR ENVIO
+  "killstorecl-container-condicional#countDown-envio": {
+    "props": {
+      "Condition": "flex-layout.row#despacho"
+    },
+    "children": ["killstorecl-container-stock#countDown-envio"]
+  },
+
+  "flex-layout.row#despacho": {
+    "children": [
+      "flex-layout.row#texto-condicional-envio",
+      "flex-layout.row#modal-trigger-flete"
+    ],
+    "props": {
+      "blockClass": "despacho-condicional"
+    }
+  },
+  "flex-layout.row#texto-condicional-envio": {
+    "children": [
+      "image#condicional-envio",
+      "rich-text#descripcion-envio-condicional"
+    ],
+    "props": {
+      "blockClass": "container-condicional-envio"
+    }
+  },
+  "image#condicional-envio": {
+    "props": {
+      "src": "",
+      "blockClass": "condicional-envio"
+    }
+  },
+  "rich-text#descripcion-envio-condicional": {
+    "props": {
+      "blockClass": "descripcion-envio-condicional",
+      "text": "**Para despachos**"
+    }
+  },
+
+  //// PARA RETIRO
+  "killstorecl-container-condicional#retiro": {
+    "props": {
+      "Condition": "flex-layout.row#retiro"
+    },
+    "children": ["killstorecl-container-stock#disponible-envio"]
+  },
+  "flex-layout.row#retiro": {
+    "children": [
+      "killstorecl-retiro-condicional",
+      "flex-layout.row#modal-trigger-retiro"
+    ],
+    "props": {
+      "blockClass": ["despacho-condicional", "condicional-retiro"]
+    }
+  },
+
+  ////
+  "rich-text#texto-prueba": {
+    "props": {
+      "text": "ESTE PRODUCTO SERA DESPACHADO DENTRO DE 3 DIAS"
+    }
+  },
+
+  "flex-layout.row#ahorro": {
+    "children": ["killstorecl.product-price-custom:product-spot-price-savings"],
+    "props": {
+      "blockClass": "ahorro"
+    }
+  },
+  "killstorecl.product-price-custom:product-spot-price-savings": {
+    "props": {
+      "message": "Ahorras: {spotPriceSavingsValue}"
+    }
+  },
+  "flex-layout.col#savings": {
+    "children": [
+      "killstorecl-container-stock#countDown",
+      "product-price#product",
+      "vtex.product-price:product-price-savings#product"
+    ],
+    "props": {
+      "blockClass": "col-discount-savings"
+    }
+  },
+  "killstorecl-container-stock#countDown": {
+    "children": ["killstorecl-countDown-promocion"]
+  },
+  "vtex.product-price:product-price-savings#product": {
+    "props": {
+      "percentageStyle": "locale",
+      "minimumPercentage": 0,
+      "message": "- {savingsPercentage}",
+      "blockClass": "discountInsideContainer"
+    }
+  },
+  "product-name#product": {
+    "props": {
+      "showSKU": true,
+      "showProductReference": false,
+      "showBrandName": false,
+      "blockClass": "product-name"
+    }
+  },
+  "flex-layout.row#brand-favoritos": {
+    "children": ["product-brand", "add-to-list-btn"],
+    "props": {
+      "blockClass": "row-product-discounts",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#product-discounts": {
+    "children": ["killstorecl.product-price-custom@1.x:product-spot-price"],
+    "props": {
+      "blockClass": "row-product-discounts"
+    }
+  },
+  "flex-layout.row#add-to-cart-button": {
+    "children": ["add-to-cart-button#carrito"],
+    "props": {
+      "blockClass": "add-to-cart-container"
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "children": ["add-to-cart-button#product"],
+    "props": {
+      "blockClass": "add-to-cart-wrapper"
+    }
+  },
+
+  /*Quantity and stock*/
+  "flex-layout.row#quantity-stock": {
+    "children": ["flex-layout.col#stock-right", "flex-layout.col#stock-left"],
+    "props": {
+      "blockClass": "quantity-stock"
+    }
+  },
+  "flex-layout.col#stock-right": {
+    "children": ["killstorecl-stock-alert"],
+    "props": {
+      "blockClass": "stock"
+    }
+  },
+  "flex-layout.col#stock-left": {
+    "children": ["product-quantity"],
+    "props": {
+      "blockClass": "quantity"
+    }
+  },
+
+  "killstorecl.product-price-custom@1.x:product-spot-price": {
+    "props": {
+      "blockClass": "precios-descuentos",
+      "message": "{spotPriceValue} "
+    }
+  },
+  "vtex.product-price:product-installments#product": {
+    "props": {
+      "message": "{installmentsNumber} cuotas sin interés de {installmentValue}",
+      "blockClass": "product-installments"
+    }
+  },
+  "product-price#product": {
+    "props": {
+      "showSavings": false,
+      "showListPrice": true,
+      "blockClass": "product-price"
+    }
+  },
+  "sku-selector": {
+    "props": {
+      "hideImpossibleCombinations": false,
+      "showValueForVariation": "image",
+      "initialSelection": "image"
+    }
+  },
+
+  "killstorecl-container-stock#disponible-envio": {
+    "children": ["killstorecl-container-stock#countDown-retiro"]
+  },
+  "killstorecl-container-stock#countDown-retiro": {
+    "children": [
+      "killstorecl-countDown-retiro#retiro",
+      "flex-layout.row#modal-trigger-retiro"
+    ]
+  },
+  "killstorecl-countDown-retiro#retiro": {},
+  "flex-layout.row#disponible-envio": {
+    "children": ["image#imagen-envio", "rich-text#texto-envio"],
+    "props": {
+      "blockClass": "disponible-envio"
+    }
+  },
+  "image#imagen-envio": {
+    "props": {
+      "src": "https://killstorecl.vteximg.com.br/arquivos/shipping-nw.svg",
+      "blockClass": "disponible-envio"
+    }
+  },
+  "rich-text#texto-envio": {
+    "props": {
+      "text": "**Retira gratis** en nuestras tiendas",
+      "blockClass": "disponible-envio"
+    }
+  },
+  "flex-layout.row#modal-trigger-retiro": {
+    "children": ["modal-trigger#retiro"],
+    "props": {
+      "blockClass": ["modal-trigger-flete", "modal-trigger-retiro"]
+    }
+  },
+  "modal-trigger#retiro": {
+    "children": ["rich-text#retiro", "modal-layout#retiro"],
+    "props": {
+      "blockClass": "modal-trigger-flete"
+    }
+  },
+  "rich-text#retiro": {
+    "props": {
+      "text": "Ver sucursal",
+      "blockClass": "modal-button-flete"
+    }
+  },
+  "modal-layout#retiro": {
+    "children": ["rich-text#titulo-retiro", "flex-layout.row#local-1"],
+    "props": {
+      "blockClass": ["modal-popup-flete", "modal-popup-retiro"]
+    }
+  },
+  "rich-text#titulo-retiro": {
+    "props": {
+      "text": "**Nustras suscursales**",
+      "blockClass": ["titulo-retiro"]
+    }
+  },
+  "flex-layout.row#local-1": {
+    "children": ["rich-text#titulo-local1", "rich-text#descripcion-local1"],
+    "props": {
+      "blockClass": ["locales", "local-1"]
+    }
+  },
+  "rich-text#titulo-local1": {
+    "props": {
+      "text": "**Atrio TITANIUM** MEGA Killstore",
+      "blockClass": "titulo-local1"
+    }
+  },
+  "rich-text#descripcion-local1": {
+    "props": {
+      "text": "Retira **30 minutos** después de realizar tu compra\n **Siempre considerando el horario de atención.*",
+      "blockClass": "descipcion-local1"
+    }
+  },
+  "flex-layout.row#local-2": {
+    "children": ["rich-text#titulo-local2", "rich-text#descripcion-local2"],
+    "props": {
+      "blockClass": ["locales", "local-2"]
+    }
+  },
+  "rich-text#titulo-local2": {
+    "props": {
+      "text": "**Viña del Mar**",
+      "blockClass": "titulo-local1"
+    }
+  },
+  "rich-text#descripcion-local2": {
+    "props": {
+      "text": "Retira todos los **viernes** despues de las **14:00 hrs**\n **Comprando hasta el jueves antes de las 14:30*",
+      "blockClass": "descipcion-local1"
+    }
+  },
+
+  /*Retiro en tienda*/
+  "killstorecl-container-stock#countDown-envio": {
+    "children": [
+      "killstorecl-countDown-envio",
+      "flex-layout.row#modal-trigger-flete"
+    ]
+  },
+  "product-availability#availavility-for-send-text": {
+    "props": {
+      "highStockMessage": "Disponible para enviar",
+      "blockClass": "availavility-for-send-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#availavility-for-send-text": {
+    "props": {
+      "text": "**Disponible para enviar**",
+      "blockClass": "availavility-for-send-text"
+    }
+  },
+  "product-quantity": {
+    "props": {
+      "blockClass": "product-qty",
+      "size": "small"
+    }
+  },
+  "list-context.kitLook": {
+    "blocks": ["product-summary.shelf#main"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "add-to-cart-button#product": {
+    "props": {
+      "text": "Comprar",
+      "unavailableText": "Agotado",
+      "showTooltipOnSkuNotSelected": true,
+      "showToast": true,
+      "isOneClickBuy": true,
+      "blockClass": "product-buy-button"
+    }
+  },
+  "add-to-cart-button#carrito": {
+    "props": {
+      "text": "Agregar al Carrito",
+      "unavailableText": "No Disponible",
+      "showTooltipOnSkuNotSelected": true,
+      "showToast": true,
+      "blockClass": "product-buy-button-carrito"
+    }
+  },
+  "product-brand": {
+    "props": {
+      "withLink": "logo",
+      "displayMode": "logo",
+      "logoWithLink": true,
+      "height": "60px",
+      "blockClass": "marca-productos"
+    }
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": false,
+      "blockClass": "descripcion"
+    }
+  },
+  "flex-layout.row#product-reviews": {
+    "children": ["product-reviews#product"],
+    "props": {
+      "blockClass": "flex-reviews-producto"
+    }
+  },
+  "product-reviews#product": {
+    "props": {
+      "blockClass": "reviews-producto"
+    }
+  },
+  "flex-layout.row#modal-trigger-flete": {
+    "children": ["modal-trigger#flete"],
+    "props": {
+      "blockClass": "modal-trigger-flete"
+    }
+  },
+  "modal-trigger#flete": {
+    "children": ["rich-text#flete", "modal-layout#flete"],
+    "props": {
+      "blockClass": "modal-trigger-flete"
+    }
+  },
+  "rich-text#flete": {
+    "props": {
+      "text": "Revisa cuando recibirías",
+      "blockClass": "modal-button-flete"
+    }
+  },
+  "modal-layout#flete": {
+    "children": ["shipping-simulator"],
+    "props": {
+      "blockClass": "modal-popup-flete"
+    }
+  },
+  "shipping-simulator": {
+    "props": {
+      "pricingMode": "grouped"
+    }
+  },
+  "responsive-layout.mobile#producto": {
+    "children": ["flex-layout.row#mobile-wrapper"]
+  },
+  "flex-layout.row#mobile-wrapper": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.col#left-mobile",
+      "flex-layout.row#marca-producto",
+      "flex-layout.row#nombre-producto",
+      "flex-layout.row#buttons-buy",
+      "product-identifier.product",
+      "flex-layout.row#reviews-producto",
+      "flex-layout.row#main-mobile",
+      "shelf.relatedProducts#related",
+      "flex-layout.row#killieKits",
+      "tab-layout#product",
+      "shelf.relatedProducts#similarProducts",
+      "flex-layout.row#product-reviews"
+    ],
+    "props": {
+      "blockClass": "responsive-mobile"
+    }
+  },
+  "flex-layout.row#marca-producto": {
+    "children": ["product-brand"],
+    "props": {
+      "marginTop": 6,
+      "blockClass": "row-marca-producto"
+    }
+  },
+  "flex-layout.row#main-mobile": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": "row-principal-producto"
+    },
+    "children": [
+      "flex-layout.col#right-mobile",
+      "flex-layout.col#center-mobile"
+    ]
+  },
+  "flex-layout.col#left-mobile": {
+    "children": [
+      "product-images#product-page-mobile",
+      "killstorecl-redes-sociales#mobile",
+      "add-to-list-btn"
+    ],
+    "props": {
+      "blockClass": "col-left-producto",
+      "width": "40%"
+    }
+  },
+  "killstorecl-redes-sociales#mobile": {},
+  "flex-layout.col#right-mobile": {
+    "children": [
+      "flex-layout.col#savings",
+      "vtex.product-price:product-installments#product",
+      "product-stock",
+      "flex-layout.row#product-discounts",
+      "sku-selector",
+      "killstorecl-container-condicional#stock-sucursales",
+      "killstorecl-container-condicional#countDown-envio",
+      "killstorecl-container-condicional#retiro",
+      "flex-layout.row#stock",
+      "availability-subscriber"
+    ],
+    "props": {
+      "verticalAlign": "top",
+      "preventVerticalStretch": false,
+      "blockClass": "product-right-col"
+    }
+  },
+  "flex-layout.row#stock": {
+    "children": ["killstorecl-stock-alert"],
+    "props": {
+      "blockClass": "stock"
+    }
+  },
+  "flex-layout.row#buttons-buy": {
+    "children": [
+      "flex-layout.row#add-to-cart-button",
+      "flex-layout.row#buy-button"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "buttons-buy"
+    }
+  },
+  "flex-layout.col#center-mobile": {
+    "children": ["product-description", "flex-layout.row#garantia"],
+    "props": {
+      "verticalAlign": "top",
+      "preventVerticalStretch": false,
+      "blockClass": "col-center-producto",
+      "width": "35%"
+    }
+  },
+  "availability-subscriber": {
+    "props": {
+      "blockClass": "disponibilidad",
+      "component": "AvailabilitySubscriber"
+    }
+  },
+  "flex-layout.row#killieKits": {
+    "children": ["killstorecl-KillieKitsProducts"],
+    "props": {
+      "blockClass": ["killieKits"]
+    }
+  },
+  "product-images#product-page-mobile": {
+    "props": {
+      "displayThumbnailsArrows": false,
+      // "zoomMode": "in-place-hover",
+      "zoomMode": "in-place-click",
+      // "ModalZoom": "modal-layout#product-zoom-mobile",
+      "blockClass": "image-producto",
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      }
+    }
+  },
+  "modal-layout#product-zoom-mobile": {
+    "children": [
+      "flex-layout.row#header-modal",
+      // you can put any other block inside the modal,
+      // this is just a normal modal
+      "product-images#modal-mobile"
+    ],
+    "props": {
+      "blockClass": "image-modal-mobile"
+    }
+  },
+  "product-images#modal-mobile": {
+    "props": {
+      "displayThumbnailsArrows": false,
+      "blockClass": "image-modal-mobile",
+      "zoomMode": "in-place-click",
+      "showNavigationArrows": true,
+      "showPaginationDots": true,
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      }
+    }
+  }
+}

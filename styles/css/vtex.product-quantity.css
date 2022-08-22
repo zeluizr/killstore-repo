@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.quantitySelectorTitle--product-qty {
+  text-align: left;
+  font-family: "Gotham Regular";
+}
+
+.quantitySelectorContainer--product-qty {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.quantitySelectorTitle {
+  display: none;
+}
+
+.quantitySelectorStepper--product-qty {
+  margin: 20px;
+}
+
+.quantitySelectorStepper--product-qty :global(.vtex-numeric-stepper__input) {
+  border-color: #535353;
+}
+
+.quantitySelectorStepper--product-qty
+  :global(.vtex-numeric-stepper__minus-button) {
+  border-color: #535353;
+}
+
+.quantitySelectorStepper--product-qty
+  :global(.vtex-numeric-stepper__minus-button__text) {
+  color: #535353;
+}
+
+.quantitySelectorStepper--product-qty
+  :global(.vtex-numeric-stepper__plus-button) {
+  border-color: #535353;
+}
+
+.quantitySelectorStepper--product-qty
+  :global(.vtex-numeric-stepper__plus-button__text) {
+  color: #535353;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--quantity) .quantitySelectorStepper--product-qty{
+  position: relative;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--quantity) .quantitySelectorStepper--product-qty :global(.vtex-numeric-stepper-container){
+  flex-direction: column-reverse;
+  align-items: end;
+  width: 100px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--quantity) .quantitySelectorStepper--product-qty :global(.vtex-numeric-stepper__input){
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid;
+  border-radius: 5px 0 0 5px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--quantity) .quantitySelectorStepper--product-qty :global(.vtex-numeric-stepper__plus-button){
+    border: 1px solid;
+    border-color: #535353;
+    width: 40px !important;
+    height: 18px;
+    border-radius: 0 5px 0 0 !important;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--quantity) .quantitySelectorStepper--product-qty :global(.vtex-numeric-stepper__minus-button){
+  border: 1px solid;
+  border-top: none;
+  border-color: #535353;
+  width: 40px !important;
+  height: 18px;
+  border-radius: 0 0 5px 0 !important;
+}

@@ -1,0 +1,10 @@
+{
+    "store.custom#landing-cyber":{
+        "blocks": [
+            "killstorecl-insert-html"
+        ],
+        "parent":{
+            "header": "header.full#cyber"
+        }
+    }
+}

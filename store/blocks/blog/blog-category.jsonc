@@ -1,0 +1,9 @@
+{
+  "store.blog-category": {
+    "children": [
+      "blog-breadcrumb.wordpress-breadcrumb",
+      "blog-search.wordpress-search",
+      "blog-category-list.wordpress-category-list"
+    ]
+  }
+}

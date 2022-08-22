@@ -1,0 +1,70 @@
+{
+  /*Slider Home*/
+  "list-context.image-list#home": {
+    "children": ["slider-layout#home"],
+    "props": {
+      "images": [
+        {
+          "image": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/cbf2ed80-c48d-45a8-bb51-386952b7cb6d___7274f0ed63d82f9bad5f7169163190e8.gif",
+          "mobileImage": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/4ac107db-8bd9-4032-a5ef-1a14514592ea___240645cdeb799abc4871b1b83bbd9a33.gif",
+          "link": {
+              "url" : "/pre-cyber"
+          }
+        },
+        {
+          "image": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/69cbac35-082a-46f4-a685-2edee0f45b24___2c8a011189786bc3852c28c770c4d2a8.png",
+          "mobileImage": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/06eb1e3c-2afc-4e24-9145-769c66bd354f___9503543a676ad39d89c6381865a3e274.png",
+          "link": {
+              "url" : "/gimbal-feiyutech-ak2000s---advanced-kit/p"
+          }
+        },
+        {
+          "image": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/e341f383-63bc-4111-a7fe-5fba80d7e268___97ede9b13f64ff3baa5363fe38b23b97.png",
+          "mobileImage": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/61c0840d-7a1c-407a-a9df-23fec4325a26___3deec11200729a13b3acbbbddca5c9cc.png",
+          "link": {
+              "url" : "/fotografia/lentes/canon?initialMap=c,c&initialQuery=fotografia/lentes&map=category-1,category-2,brand"
+          }
+        },
+        {
+          "image": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/439f710a-880d-4001-8b0b-558281d3fdc3___b063a798c9a7e2e650133805d980841f.png",
+          "mobileImage": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/eaafdd73-a680-4d15-84ed-7d013476852d___6a5d170393f6013adb9be3b300f5bed9.png",
+          "link": {
+              "url" : "/453?map=productClusterIds"
+          }
+        },
+        {
+          "image": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/3cb00d7d-c7f0-4cd2-abf0-4ba05183b40c___81563a6b80d8051f77aa6dacf52b1152.png",
+          "mobileImage": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/86464538-441c-49eb-8d6b-fcf83f705a68___7bd41ee079f2fd07b034ebee850ad68d.png",
+          "link": {
+              "url" : "/kit-microfono-podcast-usb-maono-au-pm422---con-brazo-anti-shock-y-anti-pop/p"
+          }
+        },
+        {
+          "image": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/83acd705-25dd-4ae8-8f4e-e55d97eb2214___9012bb637103db5bf64bd51815f339a0.png",
+          "mobileImage": "https://killstorecl.vtexassets.com/assets/vtex.file-manager-graphql/images/58b6161f-a643-4fa6-9e19-d347fbe1a050___abd2945816edb3db679d10a69d4496ec.png",
+          "link": {
+              "url" : "/439?map=productClusterIds"
+          }
+        }
+      ],
+      "height": 900,
+      "blockClass": "slider-home"
+    }
+  },
+  "slider-layout#home": {
+    "props": {
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1
+      },
+      "showPaginationDots": "always",
+      "fullWidth": true,
+      "blockClass": "slider-home"
+    }
+  }
+}

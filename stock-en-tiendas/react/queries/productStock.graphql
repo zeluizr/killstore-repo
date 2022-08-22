@@ -1,0 +1,9 @@
+query productStock($sku: [ID!]) {
+  inventoryProducts(page: 1, perPage: 100, filter: {skus: $sku}){
+    products{
+      skuName
+    	quantity
+      warehouseName
+    }
+  }
+}

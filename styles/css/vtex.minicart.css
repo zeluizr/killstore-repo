@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.cartIcon {
+  color: #ff511d;
+  width: 20px;
+  height: 20px;
+}
+
+.openIconContainer :hover {
+  background: white;
+}
+
+.openIconContainer :focus {
+  background: white;
+}
+
+.openIconContainer {
+  width: 60px;
+  padding: 0;
+}
+
+.openIconContainer :global(.vtex-button) {
+  width: 60px;
+  border-radius: 0;
+}
+
+.minicartQuantityBadgeDefault,
+.minicartQuantityBadgeDefault:hover {
+  background: #ff511d;
+}
+.minicartCheckoutButton :global(.vtex-button__label)::after {
+  content: "Ir a pagar";
+  font-size: 16px;
+}
+.minicartCheckoutButton :global(.vtex-button__label) {
+  font-size: 0px;
+}

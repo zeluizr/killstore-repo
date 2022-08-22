@@ -1,0 +1,8 @@
+{
+  "descripcion-larga": {
+    "component": "DescripcionLarga"
+  },
+  "countdown": {
+    "component": "Countdown"
+  }
+}
